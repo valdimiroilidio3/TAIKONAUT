@@ -1,0 +1,88 @@
+name: Restore documented brand photography
+
+# One-shot maintenance job. The uploaded repository archive contained the
+# source code but not the binary photography listed in asset-inventory.json.
+# This job re-fetches ONLY the URLs documented in that inventory, at the exact
+# dimensions it declares, and exposes them as an artifact. It does not create
+# new imagery, products, prices or video.
+on:
+  push:
+    branches: [arena/730758a2-taikonaut]
+    paths: [.github/workflows/restore-assets.yml]
+
+permissions:
+  contents: read
+
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install image tooling
+        run: python -m pip install --quiet Pillow
+      - name: Re-fetch documented official photography
+        run: |
+          python - <<'PY'
+          import io, json, os, urllib.request
+          from PIL import Image, ImageOps
+          from urllib.parse import quote
+
+          inv = json.load(open("src/data/asset-inventory.json", encoding="utf-8"))
+          root = "public"
+          made = {}
+
+          def fetch(url):
+              req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (asset restore)"})
+              with urllib.request.urlopen(req, timeout=60) as r:
+                  return r.read()
+
+          # 1. Original, documented brand photographs.
+          for asset in inv["images"]:
+              src = asset["source"]
+              if not src.startswith("http"):
+                  continue
+              dst = os.path.join(root, asset["path"].lstrip("/"))
+              os.makedirs(os.path.dirname(dst), exist_ok=True)
+              raw = fetch(src)
+              im = Image.open(io.BytesIO(raw))
+              im = ImageOps.exif_transpose(im)
+              size = (asset["width"], asset["height"])
+              im = ImageOps.fit(im.convert("RGBA" if dst.endswith(".png") else "RGB"), size,
+                               method=Image.Resampling.LANCZOS, centering=(0.5, 0.5))
+              if dst.endswith(".png"):
+                  im.save(dst, "PNG", optimize=True)
+              else:
+                  im.save(dst, "WEBP", quality=82, method=6)
+              made[asset["path"]] = dst
+              print("restored", asset["path"], im.size, os.path.getsize(dst))
+
+          # 2. Photographic crops derived from the real Mozdrian frame (declared in inventory).
+          for asset in inv["images"]:
+              src = asset["source"]
+              if src.startswith("http"):
+                  continue
+              base = os.path.join(root, src.lstrip("/"))
+              if not os.path.isfile(base):
+                  raise SystemExit("missing crop source: " + base)
+              dst = os.path.join(root, asset["path"].lstrip("/"))
+              os.makedirs(os.path.dirname(dst), exist_ok=True)
+              im = Image.open(base).convert("RGB")
+              im = ImageOps.fit(im, (asset["width"], asset["height"]),
+                               method=Image.Resampling.LANCZOS, centering=(0.5, 0.42))
+              im.save(dst, "WEBP", quality=82, method=6)
+              print("derived", asset["path"], im.size, os.path.getsize(dst))
+
+          if len(made) < 30:
+              raise SystemExit("too few sources restored")
+          PY
+      - name: Upload restored assets
+        uses: actions/upload-artifact@v4
+        with:
+          name: taikonaut-assets
+          path: public/images
+          retention-days: 3
+          if-no-files-found: error

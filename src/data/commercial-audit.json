@@ -1,0 +1,17 @@
+{
+  "auditDate": "Preencher aquando da revisão com a marca",
+  "status": "unverified",
+  "principle": "A existência de um valor no código não prova que esteja comercialmente atualizado. Nada nesta lista foi alterado sem autorização.",
+  "items": [
+    { "id": "sizes", "area": "Catálogo", "label": "Grelha de tamanhos incompleta", "detail": "A loja oficial lista XS, S, M, L, XL e 2XL. O catálogo atual tem S–XL. Confirmar a grelha real por peça antes de publicar.", "risk": "alta" },
+    { "id": "per-size-stock", "area": "Stock", "label": "Stock não é por tamanho", "detail": "O modelo atual guarda um número por produto. A loja oficial marca tamanhos esgotados individualmente. Confirmar stock por tamanho e, idealmente, modelar variantes.", "risk": "alta" },
+    { "id": "copy", "area": "Conteúdo", "label": "Descrições e materiais por validar", "detail": "Gramagens (240/460 gsm), 3M Scotchlite, nylon repelente, UV400 e tolerâncias de lavagem foram redigidos no redesign. Devem ser confirmados ou substituídos pelo texto oficial da marca.", "risk": "média" },
+    { "id": "coming-back-soon", "area": "Catálogo", "label": "Peça sem nome e sem fotografia", "detail": "Nome 'Coming back soon' e preço € 45,00 são provisórios; a imagem não foi fornecida. Confirmar se a peça existe, o preço e a designação pública.", "risk": "média" },
+    { "id": "payments", "area": "Checkout", "label": "Pagamentos não processados", "detail": "O checkout registra o pedido/reserva e gera uma mensagem WhatsApp; não cobra. Confirmar contas M-Pesa/e-Mola/BIM, POS, cartão/PayPal e quem concilia os pagamentos.", "risk": "alta" },
+    { "id": "shipping", "area": "Envios", "label": "Portes e prazos provisórios", "detail": "€ 5 Maputo/Matola, € 18 internacional, envio grátis acima de € 90 e prazos de 24–48h/3–7 dias devem ser confirmados com a operação.", "risk": "média" },
+    { "id": "fx", "area": "Preços", "label": "Taxa EUR→MZN fixa", "detail": "Taxa de 69,5 MZN por EUR configurada manualmente. Confirmar valor e data de atualização; a loja oficial cobra em EUR.", "risk": "média" },
+    { "id": "event", "area": "Evento", "label": "Data e JSON-LD do Pop-Up", "detail": "Textos indicam 12 de dezembro, 12:00–19:00, Restaurante Spazio. O JSON-LD fixa 2026 e o calendário calcula o ano seguinte após as 19:00. Confirmar ano, morada e horário.", "risk": "alta" },
+    { "id": "rights", "area": "Imagens", "label": "Direitos de publicação", "detail": "As imagens vieram da loja oficial para este redesign. Não foram usadas exportações do Instagram nem ficheiros privados do Vimeo. Confirmar autorização de publicação das fotografias com os autores/modelos.", "risk": "média" },
+    { "id": "restock-consent", "area": "CRM", "label": "Consentimento e retenção", "detail": "Restock e newsletter guardam email/WhatsApp. Confirmar texto de consentimento, base legal e prazo de retenção antes de campanhas.", "risk": "média" }
+  ]
+}

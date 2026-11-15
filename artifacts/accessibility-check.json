@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Homepage",
+    "violations": []
+  },
+  {
+    "name": "Product",
+    "violations": []
+  },
+  {
+    "name": "Cart drawer",
+    "violations": []
+  },
+  {
+    "name": "Instant search",
+    "violations": []
+  },
+  {
+    "name": "Mobile homepage",
+    "violations": []
+  },
+  {
+    "name": "Mobile menu",
+    "violations": []
+  }
+]

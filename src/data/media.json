@@ -1,0 +1,27 @@
+{
+  "arrival": {
+    "enableVideo": true,
+    "desktop": {
+      "mp4": "/videos/campaigns/arrival/desktop.mp4",
+      "webm": "/videos/campaigns/arrival/desktop.webm"
+    },
+    "mobile": {
+      "mp4": "/videos/campaigns/arrival/mobile.mp4",
+      "webm": "/videos/campaigns/arrival/mobile.webm"
+    },
+    "posterDesktop": "/images/campaigns/arrival/poster-desktop.webp",
+    "posterMobile": "/images/campaigns/arrival/poster-mobile.webp",
+    "hasAudio": false,
+    "posterCaptionPt": "Mozdrian Sweater — arquivo Taikonaut",
+    "posterCaptionEn": "Mozdrian Sweater — Taikonaut archive",
+    "videoCaptionPt": "The Arrival — filme Taikonaut",
+    "videoCaptionEn": "The Arrival — a Taikonaut film",
+    "altPt": "Modelo com boné vermelho e a camisola Mozdrian da Taikonaut, sentado à entrada de uma garagem. Fotografia do arquivo da marca.",
+    "altEn": "Model in a red cap and Taikonaut Mozdrian sweater, seated at a garage entrance. Photography from the brand archive."
+  },
+  "homecoming": {
+    "externalFilm": "https://vimeo.com/reviews/d89b7069-5905-42a7-947f-bfd9920a35ad/videos/1246028289",
+    "localFilm": null,
+    "note": "Public review linked by the official Taikonaut shop. No MP4 was accessible (403). Do not scrape private files or invent footage."
+  }
+}

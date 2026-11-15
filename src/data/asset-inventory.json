@@ -1,0 +1,461 @@
+{
+  "sourceStore": "https://www.taikonautmaputo.com/",
+  "reviewLink": "https://vimeo.com/reviews/d89b7069-5905-42a7-947f-bfd9920a35ad/videos/1246028289",
+  "rightsNote": "Sourced from the brand’s own public shop for this requested redesign. No Instagram files or private Vimeo files have been downloaded. Confirm publication rights for any future supplied media.",
+  "images": [
+    {
+      "path": "/images/campaigns/arrival/mozdrian-editorial.webp",
+      "category": "campaigns",
+      "source": "https://assets.bigcartel.com/product_images/406024074/MOZDRIAN+WEBSITE+2.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 464340,
+      "sha256": "e6cda239d98e6ba8cf53cbc7c1908904cce6498a3edd6b69d5d75f0d4f817092",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/details/mozdrian/colour-block-knit.webp",
+      "category": "details",
+      "source": "https://assets.bigcartel.com/product_images/406024080/MOZDRIAN+WEBSITE+1.jpg",
+      "width": 1400,
+      "height": 1749,
+      "bytes": 289358,
+      "sha256": "9b322a8bfa402ca780d2fe5396801b1b4578a42d9f26a80718f6e2752bf12ece",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/campaigns/signature/white-tee-editorial.webp",
+      "category": "campaigns",
+      "source": "https://assets.bigcartel.com/theme_images/170288817/DSC07420.jpg",
+      "width": 2400,
+      "height": 3600,
+      "bytes": 326304,
+      "sha256": "fb1edc37bd9651ff1ecd96cacf0c0e7a73597af2aebc4d0d93a6234e2ee4786b",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/brand/taikonaut-wordmark.png",
+      "category": "brand",
+      "source": "https://assets.bigcartel.com/theme_images/142540656/OFFICIAL+LOGO+1W.png",
+      "width": 1930,
+      "height": 694,
+      "bytes": 77959,
+      "sha256": "dc819b5aaebc865b7eae2b3b32b5106fcc929ecf9e801121dcc93a4ab45473e4",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/products/black-basic-tee/front.webp",
+      "category": "products",
+      "source": "https://assets.bigcartel.com/product_images/432468099/B+W.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 134156,
+      "sha256": "50f45b399bbd1cbaab75acf627ee38d34a28335921ca217b68dbab0c809d054c",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/products/white-basic-tee/front.webp",
+      "category": "products",
+      "source": "https://assets.bigcartel.com/product_images/432463071/W+W.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 132670,
+      "sha256": "92e2be94954e036939394c53ba6c2f54a83a4bc6a2e24d0e9ce603e56421800f",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/products/red-signature-hoodie/front.webp",
+      "category": "products",
+      "source": "https://assets.bigcartel.com/product_images/430358565/RF.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 167912,
+      "sha256": "0f6c0d678a8be316c6730fcdd94d560b20dd5ac0b1ea9e16dd45eca81cab8084",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/products/red-signature-hoodie/back.webp",
+      "category": "products",
+      "source": "https://assets.bigcartel.com/product_images/430358568/RB.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 163276,
+      "sha256": "1ce3f76652d4098bf3b47e5a71e3983af0eadffdda03fb5518f04bad9efcbaa0",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/products/blue-signature-hoodie/front.webp",
+      "category": "products",
+      "source": "https://assets.bigcartel.com/product_images/430358664/BF.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 203384,
+      "sha256": "12ec68752d7ad04882b97e5b646614c5415ceba86ee405d93c23b073f27f6a18",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/products/blue-signature-hoodie/back.webp",
+      "category": "products",
+      "source": "https://assets.bigcartel.com/product_images/430358667/BB.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 194798,
+      "sha256": "e3a5ce7e45e2d637504af5faf0467b941bef9df3bb386ae5db60cb3229e94d0e",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/products/yellow-signature-hoodie/front.webp",
+      "category": "products",
+      "source": "https://assets.bigcartel.com/product_images/430358748/YF.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 177810,
+      "sha256": "ef47d5ca48a42474a49117bc92d8cf1573809a7af32d20648c931665fb718984",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/products/yellow-signature-hoodie/back.webp",
+      "category": "products",
+      "source": "https://assets.bigcartel.com/product_images/430358754/YB.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 178972,
+      "sha256": "0cf0147ead228063a47fa05ea6b9cb9c93f87d38eecedd8394715cacd8e63c49",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/products/day-map-jacket/front.webp",
+      "category": "products",
+      "source": "https://assets.bigcartel.com/product_images/407776554/WEB+DAY+F+copy.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 185500,
+      "sha256": "585a3b75898f4afe4354d1cb0e14f7efd1c66c13a9e005f8baf8e9e1e5f0a2e5",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/products/day-map-jacket/back.webp",
+      "category": "products",
+      "source": "https://assets.bigcartel.com/product_images/407776557/WEB+DAY+B.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 167754,
+      "sha256": "bcc19f79b36aee0e768fbb6ff44b4f1a6c13f3a35bc89e2dcc5479d427f2615d",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/details/map-jackets/day-map-close-up.webp",
+      "category": "details",
+      "source": "https://assets.bigcartel.com/product_images/407776560/WEB+DAY+O+.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 289556,
+      "sha256": "b2f762851af09e9475a1d77f5067c7c20caf799286e34f718877947f3ec1c186",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/products/night-map-jacket/front.webp",
+      "category": "products",
+      "source": "https://assets.bigcartel.com/product_images/407776626/WEB+NIGHT+F.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 165526,
+      "sha256": "0f884d7f92c6e8fcef55b609750fc5d9261b921135deaaf1a88a67d41497d3f3",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/products/night-map-jacket/back.webp",
+      "category": "products",
+      "source": "https://assets.bigcartel.com/product_images/407776623/WEB+NIGHT+B.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 177752,
+      "sha256": "6e4390697a12529925a798cebacebb2dea4400aab8fcfa127c3934370914df19",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/details/map-jackets/night-map-close-up.webp",
+      "category": "details",
+      "source": "https://assets.bigcartel.com/product_images/407776629/WEB+NIGHT+O+.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 294784,
+      "sha256": "5d9dda5c6874040ec4242aa1689cc4b03b88a8053d4d278c1ec1ca64623bba47",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/products/black-taikosunnies/profile.webp",
+      "category": "products",
+      "source": "https://assets.bigcartel.com/product_images/421630395/BLACK+PROFILE.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 141554,
+      "sha256": "6e30393703fcf7b63603ead84d5cbb60f424ec2cd88711aa59d12edbc052c03d",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/products/black-taikosunnies/front.webp",
+      "category": "products",
+      "source": "https://assets.bigcartel.com/product_images/421630398/BLACK+LAYED.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 136186,
+      "sha256": "6a22630fcc177dd7a48f94e9b13207ba00e14120b15eb35c3ca5f9246ca938eb",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/details/taikosunnies/black-temple.webp",
+      "category": "details",
+      "source": "https://assets.bigcartel.com/product_images/421630401/BLACK+SIDE.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 141300,
+      "sha256": "4247260841dab9b6432f506e02536776c3c0967ac1b2f2c630c3aad85abfdd75",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/products/tortoise-shell-taikosunnies/profile.webp",
+      "category": "products",
+      "source": "https://assets.bigcartel.com/product_images/421640292/BROWN+PROFILE.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 143690,
+      "sha256": "9c83b1844162160d23d2cdd47a1757cfa64925cfa5a1a340b6fff87e50b4bb5b",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/products/tortoise-shell-taikosunnies/front.webp",
+      "category": "products",
+      "source": "https://assets.bigcartel.com/product_images/421640295/BROWN+LAYED.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 140004,
+      "sha256": "2773c89b87e92b57b4c5efc9c4895faf4123507a9c32116c18d046925fa0ec23",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/details/taikosunnies/tortoise-temple.webp",
+      "category": "details",
+      "source": "https://assets.bigcartel.com/product_images/421640298/BROWN+SIDE.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 145754,
+      "sha256": "5882f3e91b3866e78df1e26a23202f8c74fc83759e9b8759d6a793710f62ba7b",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/products/taikonaut-pin/front.webp",
+      "category": "products",
+      "source": "https://assets.bigcartel.com/product_images/3a4bb2f5-2617-41fe-9567-7bf0344156e5/taikonaut-pin.jpg",
+      "width": 800,
+      "height": 1000,
+      "bytes": 14008,
+      "sha256": "717b0b85dda436c7e4e91193f0c8a2dbf9c41a3488a95ce4e2b261575c6b70fe",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/products/taikonaut-pin/back.webp",
+      "category": "products",
+      "source": "https://assets.bigcartel.com/product_images/412450350/WEB+PIN+B.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 87846,
+      "sha256": "a62097151ea4e89e92adfcfc950c4556e9360e361d971fc2f627c7dbe5d088a7",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/products/manga-tee/front.webp",
+      "category": "products",
+      "source": "https://assets.bigcartel.com/product_images/407969397/WEBSITE+MANGA.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 117240,
+      "sha256": "dba463dfd721ae04cd2d20c87ffb8b29fe3b59b5bfb3fa6f9bd61687e7d32e24",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/community/fruit-series/manga-on-model.webp",
+      "category": "community",
+      "source": "https://assets.bigcartel.com/product_images/407970084/B3BCDEB5-5C3E-49D2-9CEE-4798723FD807.JPG",
+      "width": 1400,
+      "height": 1747,
+      "bytes": 360964,
+      "sha256": "43ce3fb5696583eb748a9619e860d4f067fc62eceaa55d1f15ba2bfee5204501",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/details/fruit-series/manga-print.webp",
+      "category": "details",
+      "source": "https://assets.bigcartel.com/product_images/407970081/575D8A99-54DA-4605-816D-F6BBCB292C68.jpg",
+      "width": 1400,
+      "height": 1749,
+      "bytes": 225542,
+      "sha256": "d969f23fbe672f531cc8867c5e7194be5b1cdc34b224ac1d36c3333651d0c847",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/products/tintsiva-tee/front.webp",
+      "category": "products",
+      "source": "https://assets.bigcartel.com/product_images/404953929/WEBSITE+TINTSIVA.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 119026,
+      "sha256": "5aa69e4dc1700374dc5114ec454bf9d23951eeaceed1145c19c58ca00cbd1807",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/community/fruit-series/tintsiva-on-model.webp",
+      "category": "community",
+      "source": "https://assets.bigcartel.com/product_images/405962784/5FB4111A-1ADF-4965-A5E4-081AE403DAE7.jpg",
+      "width": 1400,
+      "height": 1747,
+      "bytes": 351720,
+      "sha256": "e982f3e51337899a8c78ef671e6384fb1fbc8448094aae8a48db94a369b552d3",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/details/fruit-series/tintsiva-print.webp",
+      "category": "details",
+      "source": "https://assets.bigcartel.com/product_images/405962781/4892EAE9-8E86-4943-AC3F-F2420AF21D83.JPG",
+      "width": 1400,
+      "height": 1747,
+      "bytes": 322878,
+      "sha256": "7c247cc3b7716e15902049c5992148d712222d7ca84d1c52a80abcc5d6930517",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/brand/size-guides/tees.webp",
+      "category": "brand",
+      "source": "https://assets.bigcartel.com/product_images/432468102/SIZE+CHART.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 115326,
+      "sha256": "b9876d9fedbb3c8f28178626a76dbfadb3b9cd1adaf4e817fd3991c1c3f4a554",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/brand/size-guides/hoodies.webp",
+      "category": "brand",
+      "source": "https://assets.bigcartel.com/product_images/430549362/SIZE+CHART.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 152916,
+      "sha256": "d0391495dbeca6a57e23d16ac3d8e35f906ebca3b3881c7883281621d0655442",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/brand/size-guides/jackets.webp",
+      "category": "brand",
+      "source": "https://assets.bigcartel.com/product_images/426801177/WBSS.jpg",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 126692,
+      "sha256": "2eccffd9e70daacd03842804bdfefa5228f5e90c2b9eb6afe0d38267c4274ee5",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store; no generated imagery."
+    },
+    {
+      "path": "/images/campaigns/arrival/poster-desktop.webp",
+      "category": "campaigns",
+      "source": "/images/campaigns/arrival/mozdrian-editorial.webp",
+      "width": 1600,
+      "height": 1000,
+      "bytes": 215140,
+      "status": "available",
+      "provenance": "Photographic crop of the official archive image. Not a video frame."
+    },
+    {
+      "path": "/images/campaigns/arrival/poster-mobile.webp",
+      "category": "campaigns",
+      "source": "/images/campaigns/arrival/mozdrian-editorial.webp",
+      "width": 720,
+      "height": 1080,
+      "bytes": 110474,
+      "status": "available",
+      "provenance": "Photographic crop of the official archive image. Not a video frame."
+    },
+    {
+      "path": "/images/campaigns/arrival/social.webp",
+      "category": "campaigns",
+      "source": "/images/campaigns/arrival/mozdrian-editorial.webp",
+      "width": 1200,
+      "height": 630,
+      "bytes": 94138,
+      "status": "available",
+      "provenance": "Photographic crop of the official archive image. Not a video frame."
+    }
+  ],
+  "missing": [
+    {
+      "path": "/videos/campaigns/arrival/desktop.mp4",
+      "status": "missing",
+      "required": true,
+      "spec": "H.264, 1920×1080, 24/25fps, 12–20s, silent, faststart, <5MB"
+    },
+    {
+      "path": "/videos/campaigns/arrival/mobile.mp4",
+      "status": "missing",
+      "required": true,
+      "spec": "H.264, 720×1080 or 720×1280, manually reframed, silent, <2MB"
+    },
+    {
+      "path": "/videos/campaigns/arrival/desktop.webm",
+      "status": "missing",
+      "required": false,
+      "spec": "Optional VP9 alternate, same edit and framing as desktop.mp4"
+    },
+    {
+      "path": "/videos/campaigns/arrival/mobile.webm",
+      "status": "missing",
+      "required": false,
+      "spec": "Optional VP9 alternate, same edit and framing as mobile.mp4"
+    },
+    {
+      "path": "/videos/campaigns/homecoming/film.mp4",
+      "status": "missing",
+      "required": false,
+      "spec": "Authorised export of The Homecoming Pop-Up film linked on the official store. Public MP4 access returned 403."
+    },
+    {
+      "product": "coming-back-soon",
+      "path": "/images/products/coming-back-soon/front.webp",
+      "status": "missing",
+      "required": false,
+      "spec": "Supply the genuine product image. The interface currently displays an explicit text-only unavailable state."
+    }
+  ]
+}

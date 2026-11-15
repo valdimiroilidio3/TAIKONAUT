@@ -1,0 +1,28 @@
+{
+  "lab": "LAB, not field data",
+  "route": "/",
+  "lcp": 140,
+  "cls": 0,
+  "fcp": 140,
+  "ttfb": 5.400000000023283,
+  "domInteractive": 37.40000000002328,
+  "transferSize": 16047,
+  "viewport": 390,
+  "docWidth": 390,
+  "status": 200,
+  "addToCartMs": 81,
+  "persistedItems": 1,
+  "persistedImage": "/images/products/black-basic-tee/front.webp",
+  "cartReopened": true,
+  "transferBytes": {
+    "total": 360224,
+    "image": 293356,
+    "script": 0,
+    "font": 66868,
+    "css": 0,
+    "video": 0
+  },
+  "lighthouseScoreClaim": null,
+  "coreWebVitalsAssessment": "good-in-lab",
+  "failures": []
+}

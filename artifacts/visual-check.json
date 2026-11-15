@@ -1,0 +1,44 @@
+[
+  {
+    "name": "desktop",
+    "width": 1440,
+    "documentWidth": 1440,
+    "chapters": [
+      "arrival",
+      "world",
+      "collection",
+      "details",
+      "our-world"
+    ],
+    "brokenImages": [],
+    "fonts": [
+      "Anton",
+      "Inter"
+    ],
+    "heroPoster": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Fcampaigns%2Farrival%2Fposter-desktop.webp&w=1600&q=85",
+    "heroVideoCount": 0,
+    "unexpectedVideoRequests": [],
+    "errors": []
+  },
+  {
+    "name": "mobile",
+    "width": 390,
+    "documentWidth": 390,
+    "chapters": [
+      "arrival",
+      "world",
+      "collection",
+      "details",
+      "our-world"
+    ],
+    "brokenImages": [],
+    "fonts": [
+      "Anton",
+      "Inter"
+    ],
+    "heroPoster": "http://127.0.0.1:3000/_next/image?url=%2Fimages%2Fcampaigns%2Farrival%2Fposter-mobile.webp&w=640&q=85",
+    "heroVideoCount": 0,
+    "unexpectedVideoRequests": [],
+    "errors": []
+  }
+]

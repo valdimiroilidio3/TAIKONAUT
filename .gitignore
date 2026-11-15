@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+build/
+.env
+.env.local
+.env.*.local
+*.tsbuildinfo
+image-search/
+artifacts/*.png
+artifacts/*.webm
+.DS_Store
+npm-debug.log*

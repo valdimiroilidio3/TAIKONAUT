@@ -1,0 +1,798 @@
+[
+  {
+    "id": "tkn-01",
+    "slug": "day-map-jacket",
+    "name": "Day Map Jacket",
+    "category": "jackets",
+    "priceEur": 100,
+    "soldOut": false,
+    "stock": 6,
+    "featured": true,
+    "bestseller": true,
+    "badgePt": "Ícone Maputo",
+    "badgeEn": "Maputo Icon",
+    "colorKey": "cream",
+    "colorLabelPt": "Creme Solar / Mapa Colorido",
+    "colorLabelEn": "Solar Cream / Illustrated Map",
+    "colorHex": "#EAE3D2",
+    "theme": {
+      "name": "Maputo Daylight",
+      "primary": "#C86D3B",
+      "secondary": "#007A4D",
+      "surfaceLight": "#FBF7F0",
+      "surfaceDark": "#1B1510",
+      "badgeBg": "#C86D3B",
+      "badgeText": "#FFFFFF"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colorSiblings": [
+      "day-map-jacket",
+      "night-map-jacket"
+    ],
+    "pairsWith": [
+      "black-taikosunnies",
+      "white-basic-tee",
+      "taikonaut-pin"
+    ],
+    "taglinePt": "Cartografia pop-art de Moçambique sob o sol da Baixa de Maputo.",
+    "taglineEn": "Pop-art cartography of Mozambique under the Maputo sun.",
+    "descriptionPt": "O casaco que colocou a Taikonaut no radar global. Parte da coleção 'MAP – Day & Night Coach Jackets', o Day Map Jacket celebra o território moçambicano com ilustrações vibrantes em estilo pop-art sobre base creme luminosa. Pensado para ser reconhecido ao primeiro olhar como 100% maputense.",
+    "descriptionEn": "The piece that put Taikonaut on the global radar. Part of the 'MAP – Day & Night Coach Jackets' collection, the Day Map Jacket celebrates Mozambique's geography with vibrant pop-art cartography over a crisp solar-cream shell.",
+    "materialPt": "Exterior 100% Nylon técnico repelente à água · Forro macio em malha respirável de algodão · Botões de pressão metálicos gravados · Cordão ajustável na bainha.",
+    "materialEn": "100% water-repellent technical nylon shell · Breathable soft cotton-mesh lining · Engraved metal snap buttons · Drawcord hem.",
+    "carePt": "Lavar à mão ou máquina a frio (30°C) do avesso. Não passar ferro diretamente sobre a estampa cartográfica.",
+    "careEn": "Cold gentle wash (30°C) inside out. Do not iron directly over the map artwork.",
+    "images": {
+      "front": {
+        "src": "/images/products/day-map-jacket/front.webp",
+        "altPt": "Day Map Jacket — vista frontal, fotografia de estúdio",
+        "altEn": "Day Map Jacket — front, studio shot"
+      },
+      "back": {
+        "src": "/images/products/day-map-jacket/back.webp",
+        "altPt": "Day Map Jacket — costas",
+        "altEn": "Day Map Jacket — back"
+      },
+      "detail": {
+        "src": "/images/details/map-jackets/day-map-close-up.webp",
+        "altPt": "Day Map Jacket — detalhe do mapa de Moçambique e forro acolchoado",
+        "altEn": "Day Map Jacket — detail of the Mozambique map print and quilted lining"
+      }
+    }
+  },
+  {
+    "id": "tkn-02",
+    "slug": "night-map-jacket",
+    "name": "Night Map Jacket",
+    "category": "jackets",
+    "priceEur": 100,
+    "soldOut": false,
+    "stock": 4,
+    "featured": true,
+    "bestseller": true,
+    "badgePt": "Últimas 4 un.",
+    "badgeEn": "Last 4 left",
+    "colorKey": "black",
+    "colorLabelPt": "Preto Órbita / Mapa Neon",
+    "colorLabelEn": "Orbit Black / Neon Map",
+    "colorHex": "#0D0D0F",
+    "theme": {
+      "name": "Maputo Night Orbit",
+      "primary": "#007A4D",
+      "secondary": "#F2B705",
+      "surfaceLight": "#F0F6F3",
+      "surfaceDark": "#091410",
+      "badgeBg": "#007A4D",
+      "badgeText": "#FFFFFF"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colorSiblings": [
+      "day-map-jacket",
+      "night-map-jacket"
+    ],
+    "pairsWith": [
+      "tortoise-shell-taikosunnies",
+      "black-basic-tee",
+      "taikonaut-pin"
+    ],
+    "taglinePt": "A edição noturna para exploradores urbanos das noites de Maputo.",
+    "taglineEn": "The nocturnal edition built for Maputo night explorers.",
+    "descriptionPt": "O irmão noturno do Day Map Jacket. Construído em nylon preto profundo, faz saltar as linhas cartográficas e símbolos culturais de Moçambique como constelações vistas de órbita. Ideal para transitar do pôr-do-sol na Av. Friedrich Engels até madrugada adentro.",
+    "descriptionEn": "The nocturnal counterpart to the Day Map Jacket. Cut from deep space-black nylon where Mozambique's cartographic lines pop like constellations seen from orbit.",
+    "materialPt": "Exterior 100% Nylon pesado impermeável · Forro interior acetinado · Serigrafia de alta densidade multi-cor · Coordenadas 25.9692° S, 32.5732° E internas.",
+    "materialEn": "100% heavyweight water-resistant nylon · Smooth satin-touch lining · High-density multi-color screenprint · Internal Maputo coordinates label.",
+    "carePt": "Lavar a frio do avesso. Secar à sombra para preservar o contraste das cores neon.",
+    "careEn": "Wash cold inside out. Hang dry in shade to preserve vibrant print contrast.",
+    "images": {
+      "front": {
+        "src": "/images/products/night-map-jacket/front.webp",
+        "altPt": "Night Map Jacket — vista frontal",
+        "altEn": "Night Map Jacket — front"
+      },
+      "back": {
+        "src": "/images/products/night-map-jacket/back.webp",
+        "altPt": "Night Map Jacket — costas",
+        "altEn": "Night Map Jacket — back"
+      },
+      "detail": {
+        "src": "/images/details/map-jackets/night-map-close-up.webp",
+        "altPt": "Night Map Jacket — detalhe do mapa noturno e forro azul acolchoado",
+        "altEn": "Night Map Jacket — detail of the night map print and quilted navy lining"
+      }
+    }
+  },
+  {
+    "id": "tkn-03",
+    "slug": "red-signature-hoodie",
+    "name": "Red Signature Hoodie",
+    "category": "hoodies",
+    "priceEur": 60,
+    "soldOut": false,
+    "stock": 5,
+    "featured": true,
+    "bestseller": true,
+    "badgePt": "3M Reflective",
+    "badgeEn": "3M Reflective",
+    "colorKey": "red",
+    "colorLabelPt": "Vermelho Carmim",
+    "colorLabelEn": "Crimson Red",
+    "colorHex": "#D92525",
+    "theme": {
+      "name": "Crimson Thruster",
+      "primary": "#D92525",
+      "secondary": "#0A0A0A",
+      "surfaceLight": "#FDF2F2",
+      "surfaceDark": "#1F0909",
+      "badgeBg": "#D92525",
+      "badgeText": "#FFFFFF"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colorSiblings": [
+      "red-signature-hoodie",
+      "blue-signature-hoodie",
+      "yellow-signature-hoodie"
+    ],
+    "pairsWith": [
+      "black-taikosunnies",
+      "black-basic-tee",
+      "taikonaut-pin"
+    ],
+    "taglinePt": "Algodão pesado 460gsm com assinatura estêncil 3M refletora.",
+    "taglineEn": "460gsm heavyweight fleece with 3M reflective stencil signature.",
+    "descriptionPt": "O hoodie de maior culto da Taikonaut regressa na sua terceira edição. Corte boxy contemporâneo, capuz estruturado de dupla camada sem cordões e o logo estêncil Taikonaut com acabamento refletor 3M que acende sob o flash da noite maputense.",
+    "descriptionEn": "Taikonaut's cult-favorite hoodie returns in its third drop. Boxy architectural silhouette, double-layered hood, and 3M reflective stencil branding that ignites under street flash.",
+    "materialPt": "100% Algodão French Terry pesado (460 GSM) · Punhos canelados firmes · Estampa 3M Scotchlite refletora no peito e costas.",
+    "materialEn": "100% heavyweight French Terry cotton (460 GSM) · Structured rib cuffs · 3M reflective print on chest and back.",
+    "carePt": "Lavar do avesso a máx. 30°C. Não usar máquina de secar.",
+    "careEn": "Wash inside out at max 30°C. Do not tumble dry.",
+    "images": {
+      "front": {
+        "src": "/images/products/red-signature-hoodie/front.webp",
+        "altPt": "Red Signature Hoodie — frente com logótipo Taikonaut em grande escala",
+        "altEn": "Red Signature Hoodie — front with oversized Taikonaut logo"
+      },
+      "back": {
+        "src": "/images/products/red-signature-hoodie/back.webp",
+        "altPt": "Red Signature Hoodie — costas",
+        "altEn": "Red Signature Hoodie — back"
+      }
+    }
+  },
+  {
+    "id": "tkn-04",
+    "slug": "blue-signature-hoodie",
+    "name": "Blue Signature Hoodie",
+    "category": "hoodies",
+    "priceEur": 60,
+    "soldOut": false,
+    "stock": 9,
+    "featured": true,
+    "bestseller": false,
+    "badgePt": "Drop 03",
+    "badgeEn": "Drop 03",
+    "colorKey": "blue",
+    "colorLabelPt": "Azul Cobalto Índico",
+    "colorLabelEn": "Indian Ocean Cobalt",
+    "colorHex": "#1746D4",
+    "theme": {
+      "name": "Orbital Cobalt",
+      "primary": "#1746D4",
+      "secondary": "#F2B705",
+      "surfaceLight": "#F1F5FE",
+      "surfaceDark": "#091126",
+      "badgeBg": "#1746D4",
+      "badgeText": "#FFFFFF"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colorSiblings": [
+      "red-signature-hoodie",
+      "blue-signature-hoodie",
+      "yellow-signature-hoodie"
+    ],
+    "pairsWith": [
+      "white-basic-tee",
+      "tortoise-shell-taikosunnies",
+      "taikonaut-pin"
+    ],
+    "taglinePt": "Azul profundo inspirado na estratosfera e no Oceano Índico.",
+    "taglineEn": "Deep electric cobalt inspired by the stratosphere and Indian Ocean.",
+    "descriptionPt": "O Blue Signature Hoodie equilibra presença cromática intensa com construção minimalista de luxo urbano. Ombros descaídos, bolso canguru reforçado e assinatura estêncil Taikonaut em 3M refletor prateado.",
+    "descriptionEn": "The Blue Signature Hoodie pairs intense cobalt pigment with architectural streetwear tailoring, dropped shoulders, and silver 3M reflective stencil graphics.",
+    "materialPt": "100% Algodão pesado 460 GSM pré-encolhido · Tingimento reativo de alta fixação · Detalhe refletor 3M.",
+    "materialEn": "100% pre-shrunk 460 GSM heavyweight cotton · High-fastness reactive dye · 3M reflective detail.",
+    "carePt": "Lavar separadamente nas primeiras lavagens a frio (30°C).",
+    "careEn": "Wash cold (30°C) with similar colors.",
+    "images": {
+      "front": {
+        "src": "/images/products/blue-signature-hoodie/front.webp",
+        "altPt": "Blue Signature Hoodie — frente",
+        "altEn": "Blue Signature Hoodie — front"
+      },
+      "back": {
+        "src": "/images/products/blue-signature-hoodie/back.webp",
+        "altPt": "Blue Signature Hoodie — costas",
+        "altEn": "Blue Signature Hoodie — back"
+      }
+    }
+  },
+  {
+    "id": "tkn-05",
+    "slug": "yellow-signature-hoodie",
+    "name": "Yellow Signature Hoodie",
+    "category": "hoodies",
+    "priceEur": 60,
+    "soldOut": false,
+    "stock": 7,
+    "featured": true,
+    "bestseller": false,
+    "badgePt": "Solar Edition",
+    "badgeEn": "Solar Edition",
+    "colorKey": "yellow",
+    "colorLabelPt": "Amarelo Solar Capulana",
+    "colorLabelEn": "Solar Capulana Yellow",
+    "colorHex": "#F2B705",
+    "theme": {
+      "name": "Solar Capulana",
+      "primary": "#D49B00",
+      "secondary": "#0A0A0A",
+      "surfaceLight": "#FFFBEB",
+      "surfaceDark": "#1F1805",
+      "badgeBg": "#F2B705",
+      "badgeText": "#0A0A0A"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colorSiblings": [
+      "red-signature-hoodie",
+      "blue-signature-hoodie",
+      "yellow-signature-hoodie"
+    ],
+    "pairsWith": [
+      "tortoise-shell-taikosunnies",
+      "black-basic-tee",
+      "taikonaut-pin"
+    ],
+    "taglinePt": "Energia solar africana em felpa estruturada de alta gramatura.",
+    "taglineEn": "African solar energy cut in structured heavyweight cotton.",
+    "descriptionPt": "Inspirado nos amarelos vibrantes das capulanas dos mercados do Xipamanine e Baixa, o Yellow Signature Hoodie ilumina qualquer rua. Contraste gráfico preto e refletor que afirma orgulho criativo moçambicano.",
+    "descriptionEn": "Inspired by the radiant yellows of Maputo's capulana textiles, the Yellow Signature Hoodie commands attention with bold stencil contrast and boxy comfort.",
+    "materialPt": "100% Algodão orgânico penteado 460 GSM · Capuz duplo estruturado · Estampa estêncil + 3M.",
+    "materialEn": "100% combed heavyweight 460 GSM cotton · Double-lined structured hood · Stencil + 3M print.",
+    "carePt": "Lavar do avesso a 30°C. Secar na horizontal.",
+    "careEn": "Wash inside out at 30°C. Dry flat.",
+    "images": {
+      "front": {
+        "src": "/images/products/yellow-signature-hoodie/front.webp",
+        "altPt": "Yellow Signature Hoodie — frente",
+        "altEn": "Yellow Signature Hoodie — front"
+      },
+      "back": {
+        "src": "/images/products/yellow-signature-hoodie/back.webp",
+        "altPt": "Yellow Signature Hoodie — costas",
+        "altEn": "Yellow Signature Hoodie — back"
+      }
+    }
+  },
+  {
+    "id": "tkn-06",
+    "slug": "black-basic-tee",
+    "name": "Black Basic Tee",
+    "category": "tees",
+    "priceEur": 20,
+    "soldOut": false,
+    "stock": 14,
+    "featured": true,
+    "bestseller": true,
+    "badgePt": "Essencial",
+    "badgeEn": "Essential",
+    "colorKey": "black",
+    "colorLabelPt": "Preto Estêncil",
+    "colorLabelEn": "Stencil Black",
+    "colorHex": "#111111",
+    "theme": {
+      "name": "Obsidian Core",
+      "primary": "#111111",
+      "secondary": "#C86D3B",
+      "surfaceLight": "#F5F5F4",
+      "surfaceDark": "#121212",
+      "badgeBg": "#111111",
+      "badgeText": "#FFFFFF"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colorSiblings": [
+      "black-basic-tee",
+      "white-basic-tee"
+    ],
+    "pairsWith": [
+      "day-map-jacket",
+      "black-taikosunnies",
+      "taikonaut-pin"
+    ],
+    "taglinePt": "O uniforme diário do taikonauta urbano. Gola alta canelada e corte boxy.",
+    "taglineEn": "The daily uniform of the urban taikonaut. High ribbed collar & boxy cut.",
+    "descriptionPt": "Construída para o clima de Maputo sem abdicar de estrutura streetwear: malha cardada encorpada 240 GSM que não deforma, gola subida de 2.5 cm e assinatura Taikonaut serigrafada manualmente no peito.",
+    "descriptionEn": "Engineered for Maputo warmth without sacrificing streetwear structure: crisp 240 GSM heavyweight jersey, 2.5 cm mock-ribbed collar, and signature chest stencil.",
+    "materialPt": "100% Algodão penteado 240 GSM · Gola canelada reforçada · Serigrafia branco puro.",
+    "materialEn": "100% combed cotton 240 GSM · Reinforced high rib collar · Pure white screenprint.",
+    "carePt": "Lavar a frio 30°C. Passar ferro pelo avesso.",
+    "careEn": "Machine wash cold 30°C. Iron inside out.",
+    "images": {
+      "front": {
+        "src": "/images/products/black-basic-tee/front.webp",
+        "altPt": "Black Basic Tee — t-shirt preta com logótipo Taikonaut no peito",
+        "altEn": "Black Basic Tee — black tee with chest Taikonaut logo"
+      }
+    }
+  },
+  {
+    "id": "tkn-07",
+    "slug": "white-basic-tee",
+    "name": "White Basic Tee",
+    "category": "tees",
+    "priceEur": 20,
+    "soldOut": false,
+    "stock": 12,
+    "featured": false,
+    "bestseller": true,
+    "badgePt": "Mais Vendido",
+    "badgeEn": "Best Seller",
+    "colorKey": "white",
+    "colorLabelPt": "Branco Algodão Puro",
+    "colorLabelEn": "Pure Cotton White",
+    "colorHex": "#F8F8F6",
+    "theme": {
+      "name": "Pure Stencil",
+      "primary": "#0A0A0A",
+      "secondary": "#007A4D",
+      "surfaceLight": "#FAFAF9",
+      "surfaceDark": "#161616",
+      "badgeBg": "#0A0A0A",
+      "badgeText": "#FFFFFF"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colorSiblings": [
+      "black-basic-tee",
+      "white-basic-tee"
+    ],
+    "pairsWith": [
+      "night-map-jacket",
+      "tortoise-shell-taikosunnies",
+      "taikonaut-pin"
+    ],
+    "taglinePt": "Preto sobre branco: a essência pura do logo estêncil Taikonaut.",
+    "taglineEn": "Black on crisp white: the purest expression of the Taikonaut stencil mark.",
+    "descriptionPt": "Frescura máxima para os dias de verão na Ponta do Ouro ou tardes no Spazio. Algodão opaco de 240 GSM (zero transparência) com o icónico logo Taikonaut onde as barras cruzam o 't', 'k' e 't'.",
+    "descriptionEn": "Built for sunlit days from Polana to Ponta do Ouro. Opaque 240 GSM heavyweight jersey featuring the signature crossed-bar Taikonaut stencil logo.",
+    "materialPt": "100% Algodão 240 GSM não transparente · Costura dupla nos ombros · Etiqueta tecida Maputo.",
+    "materialEn": "100% opaque 240 GSM cotton · Double-needle shoulder seams · Woven Maputo label.",
+    "carePt": "Lavar com cores brancas a 30°C.",
+    "careEn": "Wash with whites at 30°C.",
+    "images": {
+      "front": {
+        "src": "/images/products/white-basic-tee/front.webp",
+        "altPt": "White Basic Tee — t-shirt branca com logótipo Taikonaut",
+        "altEn": "White Basic Tee — white tee with Taikonaut logo"
+      },
+      "back": {
+        "src": "/images/campaigns/signature/white-tee-editorial.webp",
+        "altPt": "White Basic Tee vestida — grande plano do logótipo desenhado à mão",
+        "altEn": "White Basic Tee worn — close-up of the hand-drawn logo"
+      }
+    }
+  },
+  {
+    "id": "tkn-08",
+    "slug": "manga-tee",
+    "name": "Manga Tee",
+    "category": "tees",
+    "priceEur": 30,
+    "soldOut": true,
+    "stock": 0,
+    "featured": false,
+    "bestseller": false,
+    "badgePt": "Sold out",
+    "badgeEn": "Sold out",
+    "colorKey": "white",
+    "colorLabelPt": "Off-White / Manga Pop-Art",
+    "colorLabelEn": "Off-White / Mango Pop-Art",
+    "colorHex": "#EFECE6",
+    "theme": {
+      "name": "Tropical Manga Archive",
+      "primary": "#C86D3B",
+      "secondary": "#007A4D",
+      "surfaceLight": "#FAF5EE",
+      "surfaceDark": "#1B140E",
+      "badgeBg": "#52525B",
+      "badgeText": "#FFFFFF"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colorSiblings": [
+      "manga-tee",
+      "tintsiva-tee"
+    ],
+    "pairsWith": [
+      "day-map-jacket",
+      "tortoise-shell-taikosunnies"
+    ],
+    "taglinePt": "Pop-art botânica moçambicana dedicada à época da manga em Maputo.",
+    "taglineEn": "Mozambican botanical pop-art celebrating Maputo mango season.",
+    "descriptionPt": "Parte da série cápsula de frutos tropicais de Moçambique (ao lado da Tintsiva, Maçanica e Mafura). Ilustração autoral serigrafada em 5 cores celebrando os quintais de Maputo. Atualmente esgotada — inscreve-te para aviso prioritário de restock.",
+    "descriptionEn": "Part of Taikonaut's Mozambican fruit pop-art capsule celebrating Maputo backyards and street vendors. Currently sold out — register for first-access restock notification.",
+    "materialPt": "100% Algodão penteado 240 GSM · Serigrafia artística a base de água.",
+    "materialEn": "100% combed cotton 240 GSM · Water-based archival screenprint.",
+    "carePt": "Lavar a frio do avesso.",
+    "careEn": "Wash cold inside out.",
+    "images": {
+      "front": {
+        "src": "/images/products/manga-tee/front.webp",
+        "altPt": "Manga Tee — estampa de manga, fotografia de estúdio",
+        "altEn": "Manga Tee — mango print, studio shot"
+      },
+      "back": {
+        "src": "/images/community/fruit-series/manga-on-model.webp",
+        "altPt": "Manga Tee vestida num cais, com boné verde Taikonaut",
+        "altEn": "Manga Tee worn on a jetty with a green Taikonaut cap"
+      },
+      "detail": {
+        "src": "/images/details/fruit-series/manga-print.webp",
+        "altPt": "Manga Tee — detalhe",
+        "altEn": "Manga Tee — detail"
+      }
+    }
+  },
+  {
+    "id": "tkn-09",
+    "slug": "tintsiva-tee",
+    "name": "Tintsiva Tee",
+    "category": "tees",
+    "priceEur": 30,
+    "soldOut": true,
+    "stock": 0,
+    "featured": false,
+    "bestseller": false,
+    "badgePt": "Sold out",
+    "badgeEn": "Sold out",
+    "colorKey": "white",
+    "colorLabelPt": "Creme / Tintsiva Botânica",
+    "colorLabelEn": "Cream / Tintsiva Botanical",
+    "colorHex": "#EAE6DD",
+    "theme": {
+      "name": "Tintsiva Botanical",
+      "primary": "#007A4D",
+      "secondary": "#C86D3B",
+      "surfaceLight": "#F2F7F4",
+      "surfaceDark": "#0E1914",
+      "badgeBg": "#52525B",
+      "badgeText": "#FFFFFF"
+    },
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "colorSiblings": [
+      "manga-tee",
+      "tintsiva-tee"
+    ],
+    "pairsWith": [
+      "night-map-jacket",
+      "black-taikosunnies"
+    ],
+    "taglinePt": "Cultura e língua local transformadas em ícone de streetwear.",
+    "taglineEn": "Local Mozambican fruit heritage reimagined as a streetwear icon.",
+    "descriptionPt": "Homenagem direta às raízes do sul de Moçambique. A Tintsiva Tee traduz memória afetiva e vocabulário local numa peça gráfica colecionável que esgotou em tempo recorde. Regista o teu email ou WhatsApp para o próximo drop.",
+    "descriptionEn": "A tribute to Southern Mozambican botanical heritage and local vocabulary, turned into a collectible graphic tee that sold out in record time.",
+    "materialPt": "100% Algodão pesado 240 GSM · Estampa serigráfica multi-camada.",
+    "materialEn": "100% heavyweight 240 GSM cotton · Multi-layer screenprint.",
+    "carePt": "Lavar a frio do avesso.",
+    "careEn": "Wash cold inside out.",
+    "images": {
+      "front": {
+        "src": "/images/products/tintsiva-tee/front.webp",
+        "altPt": "Tintsiva Tee — estampa de tintsiva, fotografia de estúdio",
+        "altEn": "Tintsiva Tee — tintsiva print, studio shot"
+      },
+      "back": {
+        "src": "/images/community/fruit-series/tintsiva-on-model.webp",
+        "altPt": "Tintsiva Tee vestida num cais junto ao rio",
+        "altEn": "Tintsiva Tee worn on a riverside jetty"
+      },
+      "detail": {
+        "src": "/images/details/fruit-series/tintsiva-print.webp",
+        "altPt": "Tintsiva Tee — detalhe",
+        "altEn": "Tintsiva Tee — detail"
+      }
+    }
+  },
+  {
+    "id": "tkn-10",
+    "slug": "black-taikosunnies",
+    "name": "Black Taikosunnies",
+    "category": "taikosunnies",
+    "priceEur": 60,
+    "soldOut": false,
+    "stock": 8,
+    "featured": true,
+    "bestseller": true,
+    "badgePt": "UV400",
+    "badgeEn": "UV400",
+    "colorKey": "black",
+    "colorLabelPt": "Acetato Preto Brilhante",
+    "colorLabelEn": "Gloss Jet Black Acetate",
+    "colorHex": "#0A0A0A",
+    "theme": {
+      "name": "Solar Visor Black",
+      "primary": "#0A0A0A",
+      "secondary": "#F2B705",
+      "surfaceLight": "#F4F4F5",
+      "surfaceDark": "#111113",
+      "badgeBg": "#0A0A0A",
+      "badgeText": "#FFFFFF"
+    },
+    "sizes": [
+      "Único"
+    ],
+    "colorSiblings": [
+      "black-taikosunnies",
+      "tortoise-shell-taikosunnies"
+    ],
+    "pairsWith": [
+      "red-signature-hoodie",
+      "day-map-jacket",
+      "taikonaut-pin"
+    ],
+    "taglinePt": "Armação retangular robusta em acetato com proteção solar UV400.",
+    "taglineEn": "Bold architectural acetate frames engineered for the equatorial sun.",
+    "descriptionPt": "Desenhados como a viseira de um explorador espacial para a luz intensa de Maputo. Os Black Taikosunnies têm armação esculpida em acetato espesso, dobradiças metálicas de 5 barris e gravação Taikonaut na haste interna.",
+    "descriptionEn": "Designed like an astronaut's sun visor for bright Maputo afternoons. Sculpted from chunky premium cellulose acetate with 5-barrel metal hinges and UV400 lenses.",
+    "materialPt": "Acetato de celulose polido à mão · Lentes escuras policarbonato UV400 · Inclui estojo rígido e pano de microfibra Taikonaut.",
+    "materialEn": "Hand-polished cellulose acetate · UV400 dark tinted lenses · Includes protective case & microfiber cloth.",
+    "carePt": "Limpar apenas com o pano de microfibra incluído e guardar no estojo.",
+    "careEn": "Clean with the included microfiber cloth and store in protective case.",
+    "images": {
+      "front": {
+        "src": "/images/products/black-taikosunnies/profile.webp",
+        "altPt": "Black Taikosunnies — perfil, logótipo dourado na haste",
+        "altEn": "Black Taikosunnies — profile, gold logo on temple"
+      },
+      "back": {
+        "src": "/images/products/black-taikosunnies/front.webp",
+        "altPt": "Black Taikosunnies — pousados",
+        "altEn": "Black Taikosunnies — laid flat"
+      },
+      "detail": {
+        "src": "/images/details/taikosunnies/black-temple.webp",
+        "altPt": "Black Taikosunnies — vista lateral",
+        "altEn": "Black Taikosunnies — side view"
+      }
+    }
+  },
+  {
+    "id": "tkn-11",
+    "slug": "tortoise-shell-taikosunnies",
+    "name": "Tortoise Shell Taikosunnies",
+    "category": "taikosunnies",
+    "priceEur": 60,
+    "soldOut": false,
+    "stock": 5,
+    "featured": false,
+    "bestseller": false,
+    "badgePt": "Tartaruga Âmbar",
+    "badgeEn": "Amber Tortoise",
+    "colorKey": "tortoise",
+    "colorLabelPt": "Tartaruga Terra & Âmbar",
+    "colorLabelEn": "Earth & Amber Tortoise",
+    "colorHex": "#8B4A1E",
+    "theme": {
+      "name": "Terra Tortoise",
+      "primary": "#C86D3B",
+      "secondary": "#F2B705",
+      "surfaceLight": "#FBF5EF",
+      "surfaceDark": "#1E130B",
+      "badgeBg": "#C86D3B",
+      "badgeText": "#FFFFFF"
+    },
+    "sizes": [
+      "Único"
+    ],
+    "colorSiblings": [
+      "black-taikosunnies",
+      "tortoise-shell-taikosunnies"
+    ],
+    "pairsWith": [
+      "yellow-signature-hoodie",
+      "day-map-jacket",
+      "taikonaut-pin"
+    ],
+    "taglinePt": "Padrão tartaruga quente em tons de terra moçambicana e âmbar.",
+    "taglineEn": "Warm amber tortoise pattern echoing Mozambican earth tones.",
+    "descriptionPt": "Cada par de Tortoise Shell Taikosunnies tem veios únicos em âmbar, mel e castanho escuro. Silhueta retangular marcante que eleva instantaneamente qualquer t-shirt básica ou casaco da marca.",
+    "descriptionEn": "Every pair of Tortoise Shell Taikosunnies features unique amber, honey, and espresso marbling in a bold unisex silhouette with full UV400 protection.",
+    "materialPt": "Acetato tartaruga premium · Lentes castanho-fumo UV400 · Dobradiças reforçadas em aço.",
+    "materialEn": "Premium tortoise acetate · Warm smoke UV400 lenses · Reinforced steel hinges.",
+    "carePt": "Evitar exposição prolongada ao painel quente do carro sem estojo.",
+    "careEn": "Keep in protective case when not worn.",
+    "images": {
+      "front": {
+        "src": "/images/products/tortoise-shell-taikosunnies/profile.webp",
+        "altPt": "Tortoise Shell Taikosunnies — perfil",
+        "altEn": "Tortoise Shell Taikosunnies — profile"
+      },
+      "back": {
+        "src": "/images/products/tortoise-shell-taikosunnies/front.webp",
+        "altPt": "Tortoise Shell Taikosunnies — pousados",
+        "altEn": "Tortoise Shell Taikosunnies — laid flat"
+      },
+      "detail": {
+        "src": "/images/details/taikosunnies/tortoise-temple.webp",
+        "altPt": "Tortoise Shell Taikosunnies — vista lateral",
+        "altEn": "Tortoise Shell Taikosunnies — side view"
+      }
+    }
+  },
+  {
+    "id": "tkn-12",
+    "slug": "taikonaut-pin",
+    "name": "Taikonaut Pin",
+    "category": "accessories",
+    "priceEur": 10,
+    "soldOut": false,
+    "stock": 25,
+    "featured": false,
+    "bestseller": true,
+    "badgePt": "Colecionável",
+    "badgeEn": "Collectible",
+    "colorKey": "black",
+    "colorLabelPt": "Esmalte Preto & Prata",
+    "colorLabelEn": "Black & Silver Enamel",
+    "colorHex": "#18181B",
+    "theme": {
+      "name": "Orbital Insignia",
+      "primary": "#007A4D",
+      "secondary": "#0A0A0A",
+      "surfaceLight": "#F4F6F5",
+      "surfaceDark": "#111614",
+      "badgeBg": "#007A4D",
+      "badgeText": "#FFFFFF"
+    },
+    "sizes": [
+      "Único"
+    ],
+    "colorSiblings": [],
+    "pairsWith": [
+      "day-map-jacket",
+      "night-map-jacket",
+      "red-signature-hoodie"
+    ],
+    "taglinePt": "Insígnia metálica esmaltada para lapela, gorro, mochila ou Map Jacket.",
+    "taglineEn": "Hard-enamel metallic mission insignia for jackets, caps, or totes.",
+    "descriptionPt": "Pequeno no tamanho, gigante na identidade. O Taikonaut Pin em metal esmaltado preto e branco leva o emblema espacial da marca para a gola do teu casaco, mochila ou boné.",
+    "descriptionEn": "Small in footprint, unmistakable in identity. Hard-enamel metallic badge designed to pin onto your Map Jacket collar, beanie, or daily carry.",
+    "materialPt": "Liga de zinco banhada a níquel · Esmalte duro polido (30mm) · Fecho duplo de segurança.",
+    "materialEn": "Nickel-plated zinc alloy · Polished hard enamel (30mm) · Dual clutch backing.",
+    "carePt": "Limpar com pano seco macio.",
+    "careEn": "Wipe clean with a dry soft cloth.",
+    "images": {
+      "front": {
+        "src": "/images/products/taikonaut-pin/front.webp",
+        "altPt": "Taikonaut Pin — pin metálico com o logótipo",
+        "altEn": "Taikonaut Pin — metal logo pin"
+      },
+      "back": {
+        "src": "/images/products/taikonaut-pin/back.webp",
+        "altPt": "Taikonaut Pin — verso",
+        "altEn": "Taikonaut Pin — reverse"
+      }
+    }
+  },
+  {
+    "id": "tkn-13",
+    "slug": "coming-back-soon",
+    "name": "Coming back soon",
+    "category": "accessories",
+    "priceEur": 45,
+    "soldOut": true,
+    "stock": 0,
+    "featured": false,
+    "bestseller": false,
+    "badgePt": "Sold out",
+    "badgeEn": "Sold out",
+    "colorKey": "ochre",
+    "colorLabelPt": "Arquivo Secreto · Órbita 04",
+    "colorLabelEn": "Secret Archive · Orbit 04",
+    "colorHex": "#71717A",
+    "theme": {
+      "name": "Classified Orbit",
+      "primary": "#52525B",
+      "secondary": "#C86D3B",
+      "surfaceLight": "#F4F4F5",
+      "surfaceDark": "#141416",
+      "badgeBg": "#52525B",
+      "badgeText": "#FFFFFF"
+    },
+    "sizes": [
+      "Único"
+    ],
+    "colorSiblings": [],
+    "pairsWith": [
+      "red-signature-hoodie",
+      "black-taikosunnies"
+    ],
+    "taglinePt": "Peça de arquivo temporariamente fora de órbita. Regresso em preparação.",
+    "taglineEn": "Archive piece temporarily out of orbit. Re-entry in preparation.",
+    "descriptionPt": "Esta peça especial do arquivo Taikonaut encontra-se esgotada e em redesenho no nosso estúdio em Maputo. Deixa o teu email ou WhatsApp para receberes acesso secreto 24h antes do relançamento oficial ou surpresa no Homecoming Pop-Up.",
+    "descriptionEn": "This special archive piece is currently sold out and undergoing re-engineering at our Maputo studio. Leave your email or WhatsApp for 24h early access before public re-entry.",
+    "materialPt": "Especificações reveladas no próximo drop · Edição limitada numerada.",
+    "materialEn": "Specifications revealed on next drop · Numbered limited edition.",
+    "carePt": "A anunciar.",
+    "careEn": "TBA.",
+    "images": {
+      "front": {
+        "src": "",
+        "altPt": "Fotografia oficial ainda não disponibilizada",
+        "altEn": "Official photograph not yet supplied"
+      }
+    },
+    "imageMissing": true
+  }
+]

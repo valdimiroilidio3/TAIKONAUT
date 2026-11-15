@@ -1,0 +1,14 @@
+{
+  "passed": [
+    "Catalogue: 13 preserved products, combined URL filters, search and paging.",
+    "Instant search, PDP, required size, official size chart, cart, wishlist, Escape and focus.",
+    "EUR/MZN, quantity, PostgreSQL Pop-Up reservation, €200 authoritative display and WhatsApp link.",
+    "Sold-out product: restock capture persisted.",
+    "Community capture, .ics calendar, event details and on-demand map.",
+    "Detail tabs + arrow keys, lightbox + Escape, PT/EN.",
+    "Mobile menu, reduced motion, no unavailable video requests, no-JS story content.",
+    "Existing localStorage carts migrate to the new real image paths."
+  ],
+  "errors": [],
+  "ok": true
+}

@@ -1,0 +1,55 @@
+{
+  "store": {
+    "brandName": "TAIKONAUT",
+    "origin": "Maputo, Moçambique",
+    "coordinatesDisplay": "25.9692° S, 32.5732° E",
+    "latitude": -25.9692,
+    "longitude": 32.5732,
+    "eurToMznRate": 69.5,
+    "freeShippingThresholdEur": 90,
+    "maputoShippingEur": 5,
+    "internationalShippingEur": 18,
+    "whatsappNumber": "258843212596",
+    "whatsappDisplay": "+258 84 321 2596",
+    "email": "hello@taikonautmaputo.com",
+    "instagramHandle": "@taikonautmaputo",
+    "instagramUrl": "https://www.instagram.com/taikonautmaputo",
+    "mpesaNumber": "+258 84 321 2596 (Taikonaut Maputo Lda)",
+    "emolaNumber": "+258 87 321 2596 (Taikonaut Maputo Lda)",
+    "bankIban": "MZ59 0001 0000 0045 8921 1015 7 (Millennium bim)"
+  },
+  "popupEvent": {
+    "active": true,
+    "slug": "the-homecoming-pop-up",
+    "title": "THE HOMECOMING POP-UP",
+    "subtitlePt": "Edição Especial em Casa · Drop Físico, Música, DJ Sets & Peças Exclusivas de Arquivo",
+    "subtitleEn": "Special Maputo Edition · Physical Drop, DJ Sets & Exclusive Archive Pieces",
+    "dateDisplayPt": "Sábado, 12 de Dezembro",
+    "dateDisplayEn": "Saturday, December 12",
+    "shortDatePt": "12 DEZ",
+    "shortDateEn": "DEC 12",
+    "timeRange": "12:00 – 19:00",
+    "isoStartMonthDay": "12-12T12:00:00+02:00",
+    "isoEndMonthDay": "12-12T19:00:00+02:00",
+    "venueName": "Restaurante Spazio",
+    "address": "Av. Paulo Samuel Kankhomba 578, Maputo",
+    "city": "Maputo, Moçambique",
+    "coordinates": "25.9692° S, 32.5732° E",
+    "latitude": -25.9692,
+    "longitude": 32.5732,
+    "googleMapsUrl": "https://www.google.com/maps?q=-25.9692,32.5732",
+    "openstreetmapEmbedUrl": "https://www.openstreetmap.org/export/embed.html?bbox=32.5672%2C-25.9735%2C32.5792%2C-25.9649&layer=mapnik&marker=-25.9692%2C32.5732",
+    "perksPt": [
+      "Levantamento prioritário para peças reservadas online ('Reserva e levanta no evento')",
+      "Prova ao vivo dos Day & Night Map Jackets + 3M Signature Hoodies",
+      "Pagamento local imediato: M-Pesa, e-Mola, POS ou numerário",
+      "Autocolantes orbitais Taikonaut gratuitos nas primeiras 50 visitas"
+    ],
+    "perksEn": [
+      "Priority pickup lane for online pre-orders ('Reserve & Pick up at Pop-Up')",
+      "Try on the Day & Night Map Jackets + 3M Signature Hoodies in person",
+      "Instant local payment: M-Pesa, e-Mola, Card POS, or Cash",
+      "Free orbital Taikonaut sticker pack for the first 50 guests"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "results": [
+    "PASS Catalogue renders first 8 of 13 pieces (paged).",
+    "PASS Combined filters (hoodies + red) narrow to 1 piece.",
+    "PASS Filter state is mirrored into a shareable URL.",
+    "PASS Empty state appears for an impossible combination.",
+    "PASS Clear filters restores the catalogue without reload.",
+    "PASS Load more reveals the remaining products.",
+    "PASS Editorial view preference persists across reloads.",
+    "PASS Deep-linked filters restore 2 MAP jackets from the URL.",
+    "PASS Catalogue: no automated a11y violations",
+    "PASS Instant search: typed query, arrow key and Enter open a product.",
+    "PASS Product page: no automated a11y violations",
+    "PASS Recent search is stored locally.",
+    "PASS Immersive gallery exposes multiple labelled views.",
+    "PASS Gallery view switches via the thumbnail rail.",
+    "PASS Gallery rail supports arrow-key navigation.",
+    "PASS Adding without a size is blocked with an explicit message.",
+    "PASS Cart drawer: no automated a11y violations",
+    "PASS Cart persists across a full reload.",
+    "PASS Mobile filter sheet closes with Escape and restores focus.",
+    "PASS Mobile quick add expands sizes and adds to the bag without leaving the grid.",
+    "PASS Mobile sticky purchase bar is available.",
+    "PASS No horizontal overflow at 390px.",
+    "PASS Mobile catalogue: no automated a11y violations"
+  ],
+  "errors": [],
+  "ok": true
+}
