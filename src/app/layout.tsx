@@ -1,9 +1,20 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import Script from "next/script";
 import "./globals.css";
+import "./cinematic.css";
 import { StoreProvider } from "@/context/StoreContext";
 import { SITE_CONFIG } from "@/lib/catalog";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f7f6f2" },
+    { media: "(prefers-color-scheme: dark)", color: "#141412" },
+  ],
+  colorScheme: "light dark",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.taikonautmaputo.com"),
@@ -13,6 +24,8 @@ export const metadata: Metadata = {
   },
   description:
     "Streetwear de Maputo que explora a cultura pop e o imaginário de Moçambique. Day & Night Map Jackets, Signature Hoodies, Taikosunnies e The Homecoming Pop-Up — 12 Dez, Restaurante Spazio.",
+  alternates: { canonical: "/" },
+  robots: { index: true, follow: true },
   keywords: [
     "Taikonaut",
     "Taikonaut Maputo",

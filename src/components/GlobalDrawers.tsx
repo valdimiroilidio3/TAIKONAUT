@@ -30,6 +30,7 @@ import {
   CATEGORY_LABELS,
   EMPTY_FILTERS,
   filterProducts,
+  getProductBySlug,
   getStockState,
   stockLabel,
   formatPrice,
@@ -289,9 +290,9 @@ export function GlobalDrawers() {
           aria-modal="true"
           aria-label={language === "pt" ? "Carrinho Taikonaut" : "Taikonaut cart"}
         >
-          <div className="relative flex h-full w-full max-w-md flex-col animate-[tkn-drawer_0.8s_var(--ease-editorial)_both] bg-[var(--tkn-surface)] text-[var(--tkn-fg)] border-l-2 border-[var(--tkn-border-subtle)]">
+          <div className="cine-drawer relative flex h-full w-full max-w-md flex-col animate-[tkn-drawer_0.8s_var(--ease-editorial)_both] bg-[var(--tkn-surface)] text-[var(--tkn-fg)] border-l-2 border-[var(--tkn-border-subtle)]">
             {/* Drawer header — editorial, with explicit progress */}
-            <div className="border-b border-[var(--tkn-border)] px-5 pb-3 pt-4">
+            <div className="cine-drawer-header border-b border-[var(--tkn-border)] px-5 pb-3 pt-4">
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <p className="mono !text-[9px] text-[var(--tkn-muted)]">
@@ -358,7 +359,7 @@ export function GlobalDrawers() {
                 </div>
                 <div className="h-px w-full bg-[var(--tkn-border-subtle)] overflow-hidden">
                   <div
-                    className="h-full bg-[var(--tkn-fg)] transition-all duration-300"
+                    className="cine-drawer-progress h-full bg-[var(--tkn-fg)] transition-all duration-300"
                     style={{ width: `${freeShippingProgress}%` }}
                   />
                 </div>
@@ -396,7 +397,7 @@ export function GlobalDrawers() {
                   ) : (
                     <ul className="divide-y divide-[var(--tkn-border-subtle)]">
                       {cart.map((item) => (
-                        <li key={`${item.slug}-${item.size}`} className="flex gap-4 py-4">
+                        <li key={`${item.slug}-${item.size}`} className="cine-cart-item flex gap-4 py-4">
                           <Link
                             href={`/product/${item.slug}`}
                             onClick={() => setIsCartOpen(false)}
@@ -429,11 +430,11 @@ export function GlobalDrawers() {
                               )}
                             </div>
                             <div className="flex items-center justify-between gap-2">
-                              <div className="inline-flex items-center border border-[var(--tkn-border-subtle)]">
+                              <div className="cine-qty-control inline-flex items-center border border-[var(--tkn-border-subtle)]">
                                 <button
                                   type="button"
                                   onClick={() => updateCartQuantity(item.slug, item.size, -1)}
-                                  className="flex h-8 w-8 items-center justify-center hover:bg-[var(--tkn-surface-alt)]"
+                                  className="flex h-11 w-11 items-center justify-center hover:bg-[var(--tkn-surface-alt)]"
                                   aria-label={language === "pt" ? `Diminuir quantidade de ${item.name}` : `Decrease ${item.name} quantity`}
                                 >
                                   <Minus className="w-3 h-3" aria-hidden="true" />
@@ -442,7 +443,8 @@ export function GlobalDrawers() {
                                 <button
                                   type="button"
                                   onClick={() => updateCartQuantity(item.slug, item.size, 1)}
-                                  className="flex h-8 w-8 items-center justify-center hover:bg-[var(--tkn-surface-alt)]"
+                                  disabled={item.quantity >= (getProductBySlug(item.slug)?.stock ?? item.quantity + 1)}
+                                  className="flex h-11 w-11 items-center justify-center hover:bg-[var(--tkn-surface-alt)] disabled:opacity-35 disabled:cursor-not-allowed"
                                   aria-label={language === "pt" ? `Aumentar quantidade de ${item.name}` : `Increase ${item.name} quantity`}
                                 >
                                   <Plus className="w-3 h-3" aria-hidden="true" />
@@ -490,7 +492,7 @@ export function GlobalDrawers() {
                         setCheckoutStep("checkout");
                         trackEvent("InitiateCheckout", { value: subtotalEur });
                       }}
-                      className="flex w-full items-center justify-between gap-3 bg-[var(--tkn-fg)] px-4 py-4 text-[var(--tkn-bg)] label hover:opacity-80 transition-opacity"
+                      className="cine-checkout-cta flex w-full items-center justify-between gap-3 bg-[var(--tkn-fg)] px-4 py-4 text-[var(--tkn-bg)] label hover:opacity-80 transition-opacity"
                     >
                       <span>{language === "pt" ? "Continuar" : "Continue"}</span>
                       <span className="flex items-center gap-2">

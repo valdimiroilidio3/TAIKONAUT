@@ -48,16 +48,16 @@ export function Navbar({ cinematic = false }: { cinematic?: boolean }) {
           </Link>
           <nav className="hidden lg:block" aria-label={t("Navegação principal","Main navigation")}>
             <ul className="flex items-center gap-8 xl:gap-10">
-              {links.map(l=><li key={l.href}><Link href={l.href} className="label !text-[10px] hover:opacity-60 transition-opacity">{l.label}</Link></li>)}
+              {links.map(l=><li key={l.href}><Link href={l.href} data-cine-magnetic className="label !text-[10px] inline-flex min-h-[44px] items-center hover:opacity-60 transition-opacity">{l.label}</Link></li>)}
             </ul>
           </nav>
           <div className="flex items-center gap-4 sm:gap-5">
             <button className="label hidden xl:block" onClick={()=>setLanguage(language==="pt"?"en":"pt")} aria-label={`${language.toUpperCase()} — ${t("Mudar para inglês","Switch to Portuguese")}`}>{language.toUpperCase()}</button>
             <button className="label hidden xl:block" onClick={()=>setCurrency(currency==="EUR"?"MZN":"EUR")} aria-label={`${currency} — ${t("Mudar moeda","Switch currency")}`}>{currency}</button>
-            <button className="hidden sm:flex items-center justify-center w-8 h-10 hover:opacity-60" aria-label={t("Pesquisar produtos","Search products")} onClick={()=>setIsSearchOpen(true)}><Search size={17} strokeWidth={1.4}/></button>
-            <button className="hidden md:flex relative items-center justify-center w-8 h-10 hover:opacity-60" aria-label={t("Favoritos","Wishlist")} onClick={()=>setIsWishlistOpen(true)}><Heart size={17} strokeWidth={1.4}/>{wishlist.length>0 && <span className="absolute -right-1 top-0 text-[10px]">{wishlist.length}</span>}</button>
-            <button className="flex items-center gap-2 h-10" onClick={()=>setIsCartOpen(true)} aria-label={t(`Carrinho com ${cartCount} artigos`,`Cart with ${cartCount} items`)}><ShoppingBag size={17} strokeWidth={1.4}/><span className="mono !text-[11px]">({cartCount})</span></button>
-            <button className="xl:hidden flex items-center justify-center w-8 h-10" onClick={()=>setMenuOpen(true)} aria-label={t("Abrir menu","Open menu")} aria-expanded={menuOpen}><Menu size={20} strokeWidth={1.4}/></button>
+            <button className="hidden sm:flex items-center justify-center w-11 h-11 hover:opacity-60" aria-label={t("Pesquisar produtos","Search products")} onClick={()=>setIsSearchOpen(true)}><Search size={17} strokeWidth={1.4}/></button>
+            <button className="hidden md:flex relative items-center justify-center w-11 h-11 hover:opacity-60" aria-label={t("Favoritos","Wishlist")} onClick={()=>setIsWishlistOpen(true)}><Heart size={17} strokeWidth={1.4}/>{wishlist.length>0 && <span className="absolute -right-1 top-0 text-[10px]">{wishlist.length}</span>}</button>
+            <button className="flex items-center gap-2 h-11 min-w-[44px] justify-center" onClick={()=>setIsCartOpen(true)} aria-label={t(`Carrinho com ${cartCount} artigos`,`Cart with ${cartCount} items`)}><ShoppingBag size={17} strokeWidth={1.4}/><span className="mono !text-[11px]">({cartCount})</span></button>
+            <button className="xl:hidden flex items-center justify-center w-11 h-11" onClick={()=>setMenuOpen(true)} aria-label={t("Abrir menu","Open menu")} aria-expanded={menuOpen}><Menu size={20} strokeWidth={1.4}/></button>
           </div>
         </div>
       </header>
@@ -70,15 +70,15 @@ export function Navbar({ cinematic = false }: { cinematic?: boolean }) {
           <ul className="space-y-5">
             {[{href:"/#arrival",label:"The arrival"},{href:"/#world",label:"The world"},{href:"/#collection",label:"The collection"},{href:"/#details",label:"The details"},{href:"/#our-world",label:"Our world"}].map((l,i)=><li key={l.href} className="flex items-baseline gap-5"><span className="mono text-[#aaa99f]">0{i+1}</span><Link className="display text-[42px] sm:text-[56px]" href={l.href} onClick={()=>setMenuOpen(false)}>{l.label}</Link></li>)}
           </ul>
-          <div className="flex gap-8 mt-12 label">
-            <button className="link-u" onClick={()=>openUtility(setIsSearchOpen)}>{t("Pesquisa","Search")}</button>
-            <button className="link-u" onClick={()=>openUtility(setIsWishlistOpen)}>{t("Favoritos","Saved")} ({wishlist.length})</button>
+          <div className="flex flex-wrap gap-x-8 gap-y-3 mt-12 label">
+            <button className="link-u min-h-[44px]" onClick={()=>openUtility(setIsSearchOpen)}>{t("Pesquisa","Search")}</button>
+            <button className="link-u min-h-[44px]" onClick={()=>openUtility(setIsWishlistOpen)}>{t("Favoritos","Saved")} ({wishlist.length})</button>
           </div>
         </nav>
-        <div className="page-shell flex flex-wrap gap-8 py-6 border-t border-white/20 label">
-          <button onClick={()=>setLanguage(language==="pt"?"en":"pt")}>{language==="pt"?"PT / EN":"EN / PT"}</button>
-          <button onClick={()=>setCurrency(currency==="EUR"?"MZN":"EUR")}>{currency==="EUR"?"EUR → MZN":"MZN → EUR"}</button>
-          <button onClick={toggleThemeMode}>{themeMode==="day"?"Night mode":"Day mode"}</button>
+        <div className="page-shell flex flex-wrap gap-x-8 gap-y-2 py-6 border-t border-white/20 label">
+          <button className="min-h-[44px]" onClick={()=>setLanguage(language==="pt"?"en":"pt")}>{language==="pt"?"PT / EN":"EN / PT"}</button>
+          <button className="min-h-[44px]" onClick={()=>setCurrency(currency==="EUR"?"MZN":"EUR")}>{currency==="EUR"?"EUR → MZN":"MZN → EUR"}</button>
+          <button className="min-h-[44px]" onClick={toggleThemeMode}>{themeMode==="day"?"Night mode":"Day mode"}</button>
         </div>
       </div>}
     </>

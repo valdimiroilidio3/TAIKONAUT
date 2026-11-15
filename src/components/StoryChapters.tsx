@@ -50,11 +50,13 @@ export function WorldChapter(){
 export function MadeInMaputoBand(){
   const {language}=useStore();
   const t=(pt:string,en:string)=>language==="pt"?pt:en;
-  return <section aria-label={t("Feito em Maputo","Made in Maputo")} className="band">
-    <div className="band-strip">
+  return <section aria-label={t("Feito em Maputo","Made in Maputo")} className="band cine-band">
+    <div className="band-strip cine-band-strip">
+      <span className="cine-band-ghost" aria-hidden="true">MAPUTO</span>
       <Image src="/images/products/day-map-jacket/back.webp" alt={t("Costas do Day Map Jacket com o mapa de Moçambique","Back of the Day Map Jacket showing the map of Mozambique")} fill sizes="100vw" className="object-cover !object-[50%_42%]"/>
-      <p className="band-word">{t("Feito em Maputo.","Made in Maputo.")}</p>
+      <p className="band-word cine-band-word">{t("Feito em Maputo.","Made in Maputo.")}</p>
     </div>
+    <div className="cine-transition-rule" data-cine-transition aria-hidden="true" />
     <div className="page-shell flex flex-wrap items-center justify-between gap-4 py-5 mono !text-[9px] text-[#b9b7ac]"><span>TAIKONAUT® / MAP COLLECTION</span><span>{t("Uma ideia simples: reconhecer Moçambique ao primeiro olhar.","One simple idea: recognise Mozambique at first glance.")}</span></div>
   </section>;
 }

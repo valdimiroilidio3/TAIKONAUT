@@ -132,7 +132,8 @@ export function ProductDetailClient({ product }: { product: Product }) {
     : lowStock ? t(`Últimas ${product.stock} un.`,"Last units") : t("Em stock","In stock");
 
   return (
-    <div className="mx-auto max-w-[1600px] px-0 sm:px-8 lg:px-10 pb-28">
+    <div className="mx-auto max-w-[1600px] px-0 sm:px-8 lg:px-10 pb-28 cine-pdp">
+      <div className="cine-transition-rule" data-cine-transition aria-hidden="true" />
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="px-5 sm:px-0 py-5 text-[12px] text-[var(--tkn-faint)]">
         <ol className="flex flex-wrap items-center gap-2">
@@ -239,7 +240,7 @@ export function ProductDetailClient({ product }: { product: Product }) {
               <button
                 type="button"
                 onClick={() => setZoomIndex(activeImg)}
-                className="relative block aspect-[4/5] w-full cursor-zoom-in overflow-hidden bg-[var(--tkn-surface-alt)]"
+                className="cine-stage relative block aspect-[4/5] w-full cursor-zoom-in overflow-hidden bg-[var(--tkn-surface-alt)]"
                 aria-label={`${viewLabels[activeImg] ?? t("Vista", "View")} / ${String(activeImg + 1).padStart(2, "0")} — ${t("ampliar", "enlarge")}`}
               >
                 {gallery[activeImg] && (
@@ -280,8 +281,8 @@ export function ProductDetailClient({ product }: { product: Product }) {
         <div className="lg:col-span-4 lg:col-start-9 px-5 sm:px-0">
           <div className="lg:sticky lg:top-24 space-y-7">
             <div>
-              <div className="flex items-start justify-between gap-4">
-                <h1 className="text-[24px] sm:text-[28px] leading-[1.1] tracking-[-0.03em]">{product.name}</h1>
+              <div className="flex flex-wrap items-start justify-between gap-x-4 gap-y-2">
+                <h1 className="cine-pdp-title min-w-0 flex-1 basis-[240px]">{product.name}</h1>
                 <button
                   type="button"
                   onClick={() => toggleWishlist(product.slug)}
@@ -293,7 +294,7 @@ export function ProductDetailClient({ product }: { product: Product }) {
               </div>
               <div className="mt-3 flex flex-wrap items-baseline gap-x-4 gap-y-1">
                 <p className="text-[18px] tabular-nums">{price(product.priceEur)}</p>
-                <p className={`product-meta ${product.soldOut ? "" : "!text-[var(--tkn-fg)]"}`}><span aria-hidden="true" className={`inline-block h-1.5 w-1.5 mr-2 align-middle rounded-full ${product.soldOut ? "bg-[var(--tkn-muted)]" : "bg-[#2f6b45]"}`}/>{stockLabel}</p>
+                <p className={`cine-pdp-badge ${product.soldOut ? "" : "!text-[var(--tkn-fg)]"}`}><span aria-hidden="true" className={`cine-availability-dot inline-block h-1.5 w-1.5 rounded-full ${product.soldOut ? "bg-[var(--tkn-muted)]" : "bg-[#2f6b45]"}`}/>{stockLabel}</p>
               </div>
               <p className="mt-4 text-[13px] leading-relaxed text-[var(--tkn-muted)]">
                 {t(product.taglinePt, product.taglineEn)}
@@ -358,7 +359,7 @@ export function ProductDetailClient({ product }: { product: Product }) {
                           setSize(s);
                           setSizeError(false);
                         }}
-                        className={`h-10 min-w-[52px] px-3 text-[13px] border transition-colors duration-300 ${
+                        className={`cine-size h-10 min-w-[52px] px-3 text-[13px] border transition-colors duration-300 ${
                           active
                             ? "border-[var(--tkn-fg)] bg-[var(--tkn-fg)] text-[var(--tkn-bg)]"
                             : "border-[var(--tkn-border-subtle)] hover:border-[var(--tkn-fg)]"
@@ -397,20 +398,22 @@ export function ProductDetailClient({ product }: { product: Product }) {
               <div className="space-y-2">
                 <div className="flex gap-2">
                   <div className="flex h-12 items-center border border-[var(--tkn-border-subtle)]">
-                    <button type="button" onClick={() => setQty((q) => Math.max(1, q - 1))} className="h-full w-10 hover:opacity-60" aria-label={t("Diminuir", "Decrease")}>
+                    <button type="button" onClick={() => setQty((q) => Math.max(1, q - 1))} className="cine-qty-btn h-full w-10 hover:opacity-60" aria-label={t("Diminuir", "Decrease")}>
                       −
                     </button>
                     <span className="w-6 text-center text-[13px] tabular-nums" aria-live="polite">
                       {qty}
                     </span>
-                    <button type="button" onClick={() => setQty((q) => Math.min(product.stock, q + 1))} className="h-full w-10 hover:opacity-60" aria-label={t("Aumentar", "Increase")}>
+                    <button type="button" onClick={() => setQty((q) => Math.min(product.stock, q + 1))} className="cine-qty-btn h-full w-10 hover:opacity-60" aria-label={t("Aumentar", "Increase")}>
                       +
                     </button>
                   </div>
                   <button
                     type="button"
                     onClick={() => add(false)}
-                    className="h-12 flex-1 bg-[var(--tkn-fg)] text-[var(--tkn-bg)] label hover:opacity-80 transition-opacity"
+                    className="cine-pdp-cta h-12 flex-1 bg-[var(--tkn-fg)] text-[var(--tkn-bg)] label hover:opacity-80 transition-opacity"
+                    data-cine-pulse
+                    aria-live="polite"
                   >
                     {added === "cart" ? t("Adicionado ✓", "Added ✓") : t("Adicionar ao carrinho", "Add to cart")}
                   </button>
@@ -431,7 +434,7 @@ export function ProductDetailClient({ product }: { product: Product }) {
             )}
 
             {/* Details */}
-            <div>
+            <div data-cine-reveal>
               <dl className="mb-2">
                 <div className="spec-row"><dt>{t("Categoria","Category")}</dt><dd>{t(CATEGORY_LABELS[product.category].pt,CATEGORY_LABELS[product.category].en)}</dd></div>
                 <div className="spec-row"><dt>{t("Cor","Colour")}</dt><dd>{t(product.colorLabelPt,product.colorLabelEn)}</dd></div>

@@ -4,6 +4,7 @@ import { PRODUCTS, getProductBySlug, getGallery } from "@/lib/catalog";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { GlobalDrawers } from "@/components/GlobalDrawers";
+import { ScrollNarrative } from "@/components/ScrollNarrative";
 import { ProductDetailClient } from "@/components/ProductDetailClient";
 
 export function generateStaticParams() {
@@ -31,6 +32,7 @@ export async function generateMetadata({
   return {
     title,
     description,
+    alternates: { canonical: `/product/${slug}` },
     openGraph: {
       title,
       description,
@@ -90,6 +92,7 @@ export default async function ProductPage({
       </main>
       <Footer />
       <GlobalDrawers />
+      <ScrollNarrative />
     </div>
   );
 }

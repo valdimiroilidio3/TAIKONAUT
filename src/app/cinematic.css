@@ -1,0 +1,555 @@
+/* ==========================================================================
+   TAIKONAUT — CINEMATIC COMMERCE 2.0
+   A visual layer built ONLY on the brand's real photography and typography.
+   No generated imagery, no synthetic textures, no invented brand marks.
+
+   Rules:
+   - Every section is fully rendered and readable without JavaScript.
+   - GSAP (ScrollNarrative) owns transform/opacity; this file owns the static
+     composition. Nothing here hides content before hydration.
+   - prefers-reduced-motion removes all movement, including CSS transitions.
+   ========================================================================== */
+
+:root {
+  --cine-ink: #0e0e0c;
+  --cine-ink-soft: #191917;
+  --cine-paper: #f7f6f2;
+  --cine-accent: #c86d3b; /* from the real Day Map Jacket theme */
+  --cine-accent-soft: #e0a173;
+  --cine-line: rgba(247, 246, 242, 0.18);
+  --cine-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --cine-dur: 0.75s;
+  --cine-hair: 1px;
+}
+html[data-theme="night"] {
+  --cine-line: rgba(240, 239, 233, 0.22);
+}
+
+/* ---------- Shared editorial primitives ---------- */
+.cine-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+.cine-eyebrow::before {
+  content: "";
+  width: 26px;
+  height: var(--cine-hair);
+  background: currentColor;
+  opacity: 0.65;
+}
+.cine-rule {
+  height: var(--cine-hair);
+  width: 100%;
+  background: currentColor;
+  opacity: 0.22;
+  transform-origin: left center;
+}
+.cine-rule--accent { background: var(--cine-accent); opacity: 0.9; }
+.cine-frame { position: absolute; inset: 0; pointer-events: none; }
+.cine-frame::before,
+.cine-frame::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: var(--cine-hair) solid currentColor;
+  opacity: 0.42;
+}
+.cine-frame::before { top: 14px; left: 14px; border-right: 0; border-bottom: 0; }
+.cine-frame::after { bottom: 14px; right: 14px; border-left: 0; border-top: 0; }
+
+.cine-kicker {
+  display: block;
+  font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.62;
+}
+.cine-index {
+  font-family: var(--font-display);
+  font-size: clamp(64px, 9vw, 150px);
+  line-height: 0.8;
+  letter-spacing: -0.04em;
+  color: transparent;
+  -webkit-text-stroke: 1px currentColor;
+  opacity: 0.28;
+  user-select: none;
+}
+.cine-vlabel {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+/* Buttons: filled sweep on hover, never a layout shift */
+.cine-btn {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  min-height: 48px;
+  padding: 13px 20px;
+  overflow: hidden;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  border: var(--cine-hair) solid currentColor;
+  transition: color 0.45s var(--cine-ease), border-color 0.45s var(--cine-ease);
+}
+.cine-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--tkn-fg);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.55s var(--cine-ease);
+}
+.cine-btn:hover::before { transform: scaleX(1); }
+.cine-btn:hover { color: var(--tkn-bg); border-color: var(--tkn-fg); }
+.cine-btn--light::before { background: #f4f2e9; }
+.cine-btn--light:hover { color: #0e0e0c; border-color: #f4f2e9; }
+.cine-btn--solid { background: var(--tkn-fg); color: var(--tkn-bg); border-color: var(--tkn-fg); }
+.cine-btn--solid::before { background: var(--cine-accent); }
+.cine-btn--solid:hover { color: #fff; border-color: var(--cine-accent); }
+.cine-btn svg { flex: none; transition: transform 0.45s var(--cine-ease); }
+.cine-btn:hover svg { transform: translate(3px, -3px); }
+
+/* ---------- 01 / The arrival — cinematic hero ---------- */
+.arrival {
+  /* The opaque sticky navbar sits ABOVE the hero in document flow. */
+  height: min(calc(100svh - 84px), 1040px);
+  min-height: 620px;
+  background: var(--cine-ink);
+  color: #f7f5ed;
+}
+.arrival-media { inset: 0 0 0 27%; }
+.arrival-media img,
+.arrival-media video { object-position: 52% 48%; will-change: transform; }
+.arrival::before {
+  /* Dramatic edge lighting over the real photograph — no texture asset. */
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    radial-gradient(120% 80% at 72% 34%, transparent 38%, rgba(6, 6, 5, 0.42) 100%),
+    linear-gradient(180deg, rgba(8, 8, 7, 0.4), transparent 22%, transparent 68%, rgba(8, 8, 7, 0.72));
+}
+.arrival-shade {
+  z-index: 1;
+  background:
+    linear-gradient(90deg, #0e0e0c 0%, rgba(14, 14, 12, 0.96) 12%, rgba(14, 14, 12, 0.72) 30%, rgba(14, 14, 12, 0.06) 62%),
+    linear-gradient(0deg, rgba(8, 8, 7, 0.72), transparent 26%);
+}
+.arrival-content { z-index: 2; padding-top: clamp(22px, 3vw, 40px); padding-bottom: clamp(22px, 3vw, 40px); }
+.arrival-content > .flex:first-child { position: relative; }
+.arrival-heading {
+  font-size: clamp(104px, 13.4vw, 224px);
+  line-height: 0.86;
+  letter-spacing: -0.045em;
+  max-width: 8.5ch;
+}
+.arrival-heading .cine-line { display: block; overflow: hidden; padding-bottom: 0.06em; }
+.arrival-heading .cine-line > span { display: block; }
+.arrival-heading .cine-line:last-child > span { color: var(--cine-accent-soft); }
+.arrival-cta {
+  min-height: 48px;
+  min-width: 210px;
+  margin-top: 32px;
+  border-color: rgba(245, 243, 237, 0.7);
+  background: rgba(14, 14, 12, 0.28);
+  backdrop-filter: blur(4px);
+  color: #f7f5ed;
+}
+.arrival-cta:hover { background: #efeee6; color: #171715; }
+.arrival-footer { position: relative; }
+.arrival-side {
+  position: absolute;
+  z-index: 2;
+  right: calc(var(--page-gutter) - 4px);
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: rgba(247, 245, 237, 0.75);
+}
+.arrival-side::after { content: ""; width: 1px; height: 64px; background: currentColor; opacity: 0.5; }
+.arrival-scroll-cue {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  bottom: 26px;
+  width: 1px;
+  height: 54px;
+  background: rgba(247, 245, 237, 0.25);
+  overflow: hidden;
+  pointer-events: none;
+}
+.arrival-scroll-cue::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--cine-accent-soft);
+  animation: cine-scroll 2.4s var(--cine-ease) infinite;
+}
+@keyframes cine-scroll {
+  0% { transform: translateY(-100%); }
+  55%, 100% { transform: translateY(100%); }
+}
+.cine-hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(247, 245, 237, 0.82);
+}
+.cine-hero-meta b { font-weight: 500; color: var(--cine-accent-soft); }
+
+/* ---------- Chapter navigation ---------- */
+.chapter-nav { background: var(--cine-ink); border-top: 1px solid var(--cine-line); }
+.chapter-nav a { padding-block: 23px; transition: color 0.35s, border-color 0.35s; }
+.chapter-nav a:hover { color: var(--cine-accent-soft); }
+.chapter-nav a[aria-current="location"] { border-color: var(--cine-accent); color: #f7f5ed; }
+
+/* ---------- Featured piece (real product, real photography) ---------- */
+.cine-feature {
+  position: relative;
+  background: var(--cine-ink);
+  color: #f4f2e9;
+  overflow: hidden;
+  isolation: isolate;
+}
+.cine-feature::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: radial-gradient(90% 70% at 78% 20%, rgba(200, 109, 59, 0.14), transparent 70%);
+  pointer-events: none;
+}
+.cine-feature-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 72px);
+  align-items: center;
+  padding-block: clamp(64px, 8vw, 130px);
+}
+.cine-feature-media { position: relative; }
+.cine-feature-main {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: #232320;
+}
+.cine-feature-main img { object-fit: cover; }
+.cine-feature-inset {
+  position: absolute;
+  right: clamp(-30px, -2vw, -12px);
+  bottom: clamp(-42px, -3vw, -18px);
+  width: clamp(110px, 17vw, 220px);
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border: 6px solid var(--cine-ink);
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.45);
+  background: #232320;
+}
+.cine-feature-inset img { object-fit: cover; }
+.cine-feature-copy { position: relative; z-index: 1; }
+.cine-feature-title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: clamp(58px, 7.6vw, 128px);
+  line-height: 0.86;
+  letter-spacing: -0.045em;
+  margin-block: 26px 22px;
+}
+.cine-feature-title em { font-style: normal; color: var(--cine-accent-soft); }
+.cine-feature-price {
+  display: flex;
+  align-items: baseline;
+  gap: 22px;
+  padding-block: 18px;
+  border-block: 1px solid var(--cine-line);
+  font-variant-numeric: tabular-nums;
+}
+.cine-feature-price strong { font-size: 26px; font-weight: 500; }
+.cine-feature-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+.cine-feature-actions .cine-btn:hover { color: #0e0e0c; }
+.cine-feature-note { max-width: 42ch; color: #c9c7bc; font-size: 14px; line-height: 1.75; }
+.cine-feature-specs { display: flex; flex-wrap: wrap; gap: 8px 26px; margin-top: 26px; }
+
+/* ---------- Collection ---------- */
+.cine-collection-intro { position: relative; }
+.cine-collection-intro h1,
+.cine-collection-intro h2 { text-wrap: balance; }
+.cine-toolbar {
+  position: sticky;
+  top: 76px;
+  z-index: 25;
+  background: color-mix(in srgb, var(--tkn-bg) 88%, transparent);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+html[data-theme="night"] .cine-toolbar { background: color-mix(in srgb, var(--tkn-bg) 90%, transparent); }
+.cine-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 32px;
+  padding: 5px 10px;
+  border: 1px solid var(--tkn-border-subtle);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: border-color 0.3s, background 0.3s, color 0.3s;
+}
+.cine-chip:hover { border-color: var(--tkn-fg); background: var(--tkn-fg); color: var(--tkn-bg); }
+.cine-empty {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--tkn-border-subtle);
+  padding: clamp(48px, 9vw, 110px) 24px;
+  text-align: center;
+}
+.cine-empty::before {
+  content: "00";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-display);
+  font-size: clamp(160px, 30vw, 420px);
+  line-height: 0.7;
+  color: currentColor;
+  opacity: 0.045;
+  pointer-events: none;
+}
+
+/* ---------- Product cards ---------- */
+.cine-card { position: relative; }
+.cine-card-media { position: relative; overflow: hidden; background: var(--tkn-surface-alt); }
+.cine-card-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+  background: linear-gradient(180deg, transparent 62%, rgba(10, 10, 9, 0.16));
+  opacity: 0;
+  transition: opacity 0.6s var(--cine-ease);
+}
+.cine-card:hover .cine-card-media::after { opacity: 1; }
+.cine-card-media img { will-change: transform; }
+.cine-card-index {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 4px 9px;
+  background: var(--tkn-bg);
+  color: var(--tkn-fg);
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  transform: translateY(100%);
+  transition: transform 0.5s var(--cine-ease);
+}
+.cine-card:hover .cine-card-index { transform: none; }
+.cine-card-name { transition: opacity 0.3s; }
+.cine-card-name:hover { opacity: 0.6; }
+.cine-card-rule { height: 1px; background: var(--tkn-border-subtle); transform-origin: left; }
+.cine-card:hover .cine-card-rule { background: var(--cine-accent); }
+
+/* ---------- Product detail ---------- */
+.cine-pdp-title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: clamp(38px, 4.4vw, 72px);
+  line-height: 0.92;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+.cine-stage {
+  position: relative;
+  background: #e7e5dc;
+  isolation: isolate;
+}
+.cine-stage::before,
+.cine-stage::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(14, 14, 12, 0.14);
+  pointer-events: none;
+}
+.cine-stage::before { top: 14px; }
+.cine-stage::after { bottom: 14px; }
+html[data-theme="night"] .cine-stage { background: #242420; }
+.cine-pdp-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border: 1px solid var(--tkn-border-subtle);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.cine-size {
+  min-height: 46px;
+  min-width: 56px;
+  transition: transform 0.35s var(--cine-ease), border-color 0.35s, background 0.35s, color 0.35s;
+}
+.cine-size:not([aria-checked="true"]):hover { transform: translateY(-2px); border-color: var(--tkn-fg); }
+.cine-qty-btn { min-width: 44px; min-height: 48px; }
+.cine-pdp-cta { min-height: 52px; }
+.cine-availability-dot { animation: cine-pulse 2.8s ease-in-out infinite; }
+@keyframes cine-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.45; } }
+
+/* ---------- Drawers / purchase flow ---------- */
+.cine-drawer { box-shadow: -30px 0 90px rgba(0, 0, 0, 0.28); }
+.cine-drawer-header { background: linear-gradient(180deg, rgba(200, 109, 59, 0.07), transparent); }
+.cine-drawer-progress { height: 2px; background: var(--cine-accent); transition: width 0.4s var(--cine-ease); }
+.cine-cart-item { transition: background 0.3s; }
+.cine-cart-item:hover { background: color-mix(in srgb, var(--tkn-surface-alt) 55%, transparent); }
+.cine-qty-control button { min-height: 44px; min-width: 44px; }
+.cine-checkout-cta { min-height: 54px; }
+
+/* ---------- Section transitions / typographic bands ---------- */
+.cine-band { position: relative; overflow: hidden; }
+.cine-band-strip::after {
+  background:
+    linear-gradient(90deg, rgba(8, 8, 7, 0.86), rgba(8, 8, 7, 0.22) 66%),
+    linear-gradient(0deg, rgba(8, 8, 7, 0.6), transparent 55%);
+}
+.cine-band-word { z-index: 2; text-shadow: 0 6px 40px rgba(0, 0, 0, 0.35); }
+.cine-band-ghost {
+  position: absolute;
+  z-index: 1;
+  top: 8%;
+  right: -2%;
+  font-family: var(--font-display);
+  font-size: clamp(120px, 22vw, 380px);
+  line-height: 0.8;
+  letter-spacing: -0.06em;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(247, 245, 237, 0.16);
+  text-transform: uppercase;
+  pointer-events: none;
+  user-select: none;
+}
+.cine-transition-rule {
+  height: 2px;
+  background: var(--cine-accent);
+  transform-origin: left center;
+}
+
+/* ---------- Media loading / error states ---------- */
+.cine-skeleton {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(100deg, transparent 20%, rgba(255, 255, 255, 0.16) 48%, transparent 76%),
+    var(--tkn-surface-alt);
+  background-size: 220% 100%, auto;
+  /* The timed fade is a failsafe: a cached image whose load event predates
+     hydration never leaves a skeleton on screen. */
+  animation:
+    cine-shimmer 1.5s linear infinite,
+    cine-skeleton-out 0.01s 3s forwards;
+}
+@keyframes cine-shimmer {
+  from { background-position: -120% 0, 0 0; }
+  to { background-position: 220% 0, 0 0; }
+}
+@keyframes cine-skeleton-out { to { opacity: 0; visibility: hidden; } }
+.cine-skeleton-block { position: relative; display: block; }
+.missing-photo {
+  border: 1px dashed var(--tkn-border-subtle);
+  letter-spacing: 0.08em;
+}
+.missing-photo .mono { text-align: center; }
+
+/* ---------- Motion primitives (unhidden by default) ---------- */
+[data-cine-reveal], [data-cine-magnetic] { will-change: transform, opacity; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1023px) {
+  .arrival { height: min(calc(100svh - 76px), 900px); min-height: 600px; }
+  .arrival-media { left: 16%; }
+  .arrival-side { display: none; }
+  .arrival-scroll-cue { display: none; }
+  .cine-feature-grid { gap: 34px; padding-block: 64px; }
+  .cine-feature-title { font-size: clamp(52px, 9vw, 92px); }
+  .cine-toolbar { top: 72px; }
+}
+@media (min-width: 1024px) {
+  .cine-toolbar { top: 84px; }
+}
+@media (max-width: 767px) {
+  .arrival { height: min(calc(100svh - 76px), 860px); min-height: 570px; }
+  .arrival-media { inset: 0; }
+  .arrival-heading { font-size: clamp(84px, 22vw, 140px); }
+  .arrival-content { padding-top: 18px; padding-bottom: 16px; }
+  .arrival-copy { padding-bottom: 10px; }
+  .arrival-cta { min-height: 50px; min-width: 190px; margin-top: 20px; }
+  .cine-feature-grid { grid-template-columns: 1fr; gap: 40px; }
+  .cine-feature-media { max-width: 480px; }
+  .cine-feature-inset { width: 120px; right: -8px; bottom: -20px; border-width: 4px; }
+  .cine-feature-title { font-size: clamp(50px, 13vw, 84px); }
+  .cine-feature-actions .cine-btn { flex: 1 1 100%; }
+  .cine-toolbar { top: 68px; }
+  .cine-btn { min-height: 48px; }
+  .cine-size { min-height: 46px; }
+}
+@media (max-width: 420px) {
+  .arrival-heading { font-size: clamp(78px, 21vw, 116px); }
+  .cine-feature-inset { width: 96px; }
+}
+
+/* Touch targets: every interactive control gets at least 44px on coarse pointers. */
+@media (pointer: coarse) {
+  .cine-btn, .cine-size, .cine-qty-btn, .arrival-cta { min-height: 46px; }
+  .cine-qty-control button { min-height: 46px; min-width: 46px; }
+  button[aria-label], a[aria-label] { -webkit-tap-highlight-color: transparent; }
+}
+
+/* ---------- Reduced motion: composition only, zero movement ---------- */
+@media (prefers-reduced-motion: reduce) {
+  .arrival-scroll-cue::after,
+  .cine-availability-dot { animation: none !important; }
+  .cine-skeleton { display: none !important; }
+  .cine-btn::before,
+  .cine-btn svg,
+  .cine-card-index,
+  .cine-card-media::after,
+  .cine-size,
+  .cine-card img { transition: none !important; }
+  .cine-index, .cine-band-ghost { -webkit-text-stroke: 1px currentColor; }
+  [data-cine-reveal], [data-cine-magnetic] { will-change: auto; }
+}

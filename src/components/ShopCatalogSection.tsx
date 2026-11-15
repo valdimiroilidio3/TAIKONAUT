@@ -117,14 +117,18 @@ export function ShopAll({ compact = false, embedded = false }: { compact?: boole
   return (
     <section id="shop" className="page-shell pb-24 sm:pb-32" aria-label={t("Catálogo de produtos", "Product catalogue")}>
       {!embedded && (
-        <div className="py-14 sm:py-20">
-          <p className="kicker-row mono mb-8 justify-between"><span>TAIKONAUT® /</span><span className="text-[var(--tkn-muted)]">{PRODUCTS.length} {t("peças", "pieces")}</span></p>
+        <div className="cine-collection-intro py-14 sm:py-20" data-cine-reveal>
+          <p className="kicker-row mono mb-8 justify-between"><span>TAIKONAUT® /</span><span className="text-[var(--tkn-muted)]">{PRODUCTS.length} {t("peças", "pieces")} · {CATEGORIES.length} {t("categorias", "categories")}</span></p>
           <h1 className="display chapter-title chapter-title--tight">The<br/>collection.</h1>
+          <p className="cine-eyebrow mt-8 text-[var(--tkn-muted)]">
+            {t("Peças reais. Stock real. Maputo, Moçambique.", "Real pieces. Real stock. Maputo, Mozambique.")}
+          </p>
+          <div className="cine-transition-rule mt-10" data-cine-transition aria-hidden="true" />
         </div>
       )}
 
       {/* Toolbar */}
-      <div className="border-y border-[var(--tkn-border)]">
+      <div className="border-y border-[var(--tkn-border)] cine-toolbar">
         <div className="flex flex-wrap items-center gap-x-6 gap-y-3 py-3">
           <button
             type="button"
@@ -181,7 +185,7 @@ export function ShopAll({ compact = false, embedded = false }: { compact?: boole
         ) : (
           <>
             {chips.map((chip) => (
-              <button key={chip.key} type="button" onClick={chip.clear} className="label group flex items-center gap-1.5 hover:opacity-55">
+              <button key={chip.key} type="button" onClick={chip.clear} className="cine-chip label group flex items-center gap-1.5">
                 {chip.label}
                 <X size={11} aria-hidden="true" />
                 <span className="sr-only">{t("Remover filtro", "Remove filter")}</span>
@@ -270,7 +274,7 @@ export function ShopAll({ compact = false, embedded = false }: { compact?: boole
         {/* Results */}
         <div ref={resultsRef}>
           {results.length === 0 ? (
-            <div className="border border-[var(--tkn-border-subtle)] px-6 py-20 text-center">
+            <div className="cine-empty px-6">
               <p className="display text-[38px] leading-none">{t("Sem resultados.", "No results.")}</p>
               <p className="mx-auto mt-4 max-w-[36ch] text-[13px] text-[var(--tkn-muted)]">
                 {t("Nenhuma peça corresponde a esta combinação de filtros. Podes limpar os filtros ou ver o catálogo completo.", "No piece matches this combination. Clear the filters or view the full catalogue.")}
@@ -327,7 +331,8 @@ export function CollectionChapter() {
   const { language } = useStore();
   return (
     <section id="collection" data-chapter="collection" className="border-t border-[var(--tkn-border-subtle)]">
-      <div className="page-shell pt-16 sm:pt-24">
+      <div className="cine-transition-rule" data-cine-transition aria-hidden="true" />
+      <div className="page-shell pt-16 sm:pt-24 cine-collection-intro">
         <div className="kicker-row justify-between gap-6 mono mb-10" data-story-reveal>
           <p className="chapter-label"><span>03 /</span>The collection</p>
           <span className="text-[var(--tkn-muted)]">{PRODUCTS.length} {language === "pt" ? "peças. Uma identidade." : "pieces. One identity."}</span>

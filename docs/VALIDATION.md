@@ -130,3 +130,55 @@ Navegação por setas do rail a partir do índice errado, nome acessível das mi
 
 ### Continua pendente
 Filme autorizado (desktop e vertical), confirmação comercial com a marca (tamanhos XS/2XL, stock por variante, fichas técnicas, pagamentos e portes) e validação real de pagamentos e Core Web Vitals de campo.
+
+---
+
+## STEP 04 — Cinematic Commerce 2.0
+
+### Auditoria prévia (antes de qualquer alteração)
+
+O repositório entregue continha apenas `Taikonuat.zip`. O arquivo foi descompactado para a raiz e o código real foi auditado: Next.js 16 / React 19 / TypeScript, GSAP + ScrollTrigger, Tailwind 4, Drizzle + PostgreSQL, 13 produtos, 38 imagens documentadas, dois filmes em falta, carrinho/checkout/API e 8 suites de validação. `lint`, `typecheck` e `build` passavam **antes** de qualquer alteração (com `DATABASE_URL` definida).
+
+**Problema encontrado:** o ZIP continha o código mas nenhum binário — `public/images/` estava ausente (38 ficheiros) e os `.woff2` referenciados por `fonts.css` também. `node scripts/audit-assets.mjs` falharia num clone limpo e todas as fotografias apareceriam partidas.
+
+### Recuperação de ativos reais (sem inventar nada)
+
+- As 38 imagens foram recuperadas **exclusivamente** a partir dos URLs oficiais já registados em `src/data/asset-inventory.json`, com as dimensões exatas declaradas no inventário. Um job temporário de GitHub Actions (o sandbox não alcança `assets.bigcartel.com`) descarregou as 35 fotografias originais e produziu os 3 recortes fotográficos já declarados (posters/social) a partir da fotografia Mozdrian real. O job foi removido depois da execução; não faz parte do projeto.
+- Anton 400 e Inter variável foram obtidos dos pacotes npm `@fontsource/anton` e `@fontsource-variable/inter` (SIL OFL 1.1); as licenças já existentes em `public/fonts/` foram mantidas.
+- `node scripts/audit-assets.mjs` passa agora com 38 imagens / 5,60 MB e 38 referências de aplicação válidas. Nenhum produto, preço, stock, tamanho, descrição ou caminho comercial foi alterado: `audit-commercial.mjs` confirma igualdade com `docs/catalog-baseline.json`.
+- Os filmes autorizados continuam em falta e **não** são pedidos pelo browser; `check-video.mjs` confirma o estado declarado.
+
+### Implementação
+
+- **Direção de arte** — novo `src/app/cinematic.css`: composição editorial, iluminação/vinheta sobre fotografia real, escala tipográfica cinematográfica, acento extraído do tema real do Day Map Jacket, botões com varrimento, regras de transição, molduras e estados de compra. Nenhuma textura sintética, stock photo ou ativo de marca gerado.
+- **Motion** — `ScrollNarrative.tsx` reescrito como controlador único: `gsap.context` + `gsap.matchMedia`, timeline de entrada em camadas, reveals com ScrollTrigger, parallax subtil, regras que se desenham no scroll, tipografia com drift, microinterações magnéticas/pulse e `revert()` completo (timelines, triggers e listeners) na desmontagem. `prefers-reduced-motion` desliga todo o GSAP; dispositivos com poucos núcleos/pouca memória recebem efeitos reduzidos. Sem pinning, scroll hijacking ou snapping.
+- **Homepage** — hero cinematográfico com linhas de título mascaradas, meta lateral, cue de scroll e CTA; novo capítulo editorial `FeaturedPiece` construído apenas com dados e fotografias reais do `day-map-jacket` (preço, stock, tamanhos, tagline e vistas existentes); banda "Made in Maputo" com tipografia fantasma; cinco capítulos e navegação por capítulos preservados.
+- **Catálogo** — cabeçalho editorial com contagens reais, barra sticky com pesquisa/filtros/ordenação/vistas, chips de filtros, estado vazio tipográfico, grelhas com hover/índice e controlos de toque maiores. URL partilhável, deep links, filtros combináveis, paginação e preferência de vista intactos.
+- **Produto** — título display, disponibilidade explícita, stage com moldura, tamanhos com alvos de 46px, CTA com feedback `aria-live`, galeria com rail/swipe/zoom preservada; `AssetImage` passa a ter estados reais de carregamento, erro e fotografia por disponibilizar sem esconder conteúdo sem JavaScript.
+- **Compra** — carrinho com cabeçalho/progresso/itens/quantidades com alvos de 44px e limite de stock no botão "+". Lógica, totais, persistência, `/api/orders`, `/api/restock`, `/api/community`, `.ics`, WhatsApp e moeda EUR/MZN **não foram alterados**. Pagamentos não são simulados.
+- **Mobile / A11Y / SEO** — alturas de hero corrigidas face ao navbar sticky, grelhas e CTAs responsivos, alvos de toque, `overflow-x` zero a 390px; `viewport`/canonical/robots, `loading.tsx` por rota, `error.tsx` e `not-found.tsx`; caching de fontes/imagens em `next.config.ts`.
+
+### Validação executada
+
+| Comando | Resultado |
+| --- | --- |
+| `npm run lint` | passa, 0 erros / 0 avisos |
+| `npm run typecheck` | passa |
+| `npm run build` | passa; 20 páginas geradas (13 PDP em SSG) |
+| `node scripts/audit-assets.mjs` | PASS — 38 imagens, 5,60 MB, 38 referências |
+| `node scripts/audit-commercial.mjs` | PASS — 13 produtos idênticos ao baseline |
+| `node scripts/check-storefront.mjs` | 23/23 PASS (desktop + 390px) |
+| `node scripts/check-commerce.mjs` | 8/8 PASS (reserva PostgreSQL, restock, comunidade, .ics, PT/EN, migração) |
+| `node scripts/check-accessibility.mjs` | 0 violações automáticas em 6 cenários |
+| `node scripts/check-visuals.mjs` | sem imagens partidas, sem vídeos, 5 capítulos em ambos os tamanhos |
+| `node scripts/check-performance.mjs` | laboratório 390px: LCP 192 ms, CLS 0, TTFB 5,5 ms, carrinho persistente |
+| `node scripts/check-video.mjs` | PASS — nenhum filme não autorizado enviado |
+
+Ambiente de validação local: Chromium headless fornecido por binário npm (o CDN da Playwright não está acessível neste sandbox) e servidor PostgreSQL por PGlite sobre protocolo wire, ambos **fora do repositório**. Isto permite executar as suites existentes sem alterar a arquitetura nem as integrações.
+
+### Limitações que permanecem
+
+1. Masters de vídeo desktop/vertical e WebM opcionais não foram fornecidos; o hero continua fotográfico por decisão documentada.
+2. `Coming back soon` continua sem fotografia oficial e apresenta estado textual explícito.
+3. Os 10 pontos de `src/data/commercial-audit.json` continuam por confirmar pela marca (grelha XS/2XL, stock por variante, fichas técnicas, portes, taxa, data do evento, direitos de imagem, consentimento).
+4. Pagamentos reais, Core Web Vitals de campo e conversão com tráfego real não foram validados; os números acima são de laboratório.

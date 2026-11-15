@@ -59,12 +59,13 @@ export function ProductCard({
 
   return (
     <article
-      className="group relative flex flex-col"
+      className="group relative flex flex-col cine-card"
       data-product={product.slug}
       data-stock={state}
+      data-cine-card
     >
       <div
-        className={`relative w-full overflow-hidden bg-[var(--tkn-surface-alt)] ${
+        className={`relative w-full overflow-hidden bg-[var(--tkn-surface-alt)] cine-card-media ${
           isFeatured ? "aspect-[4/5] sm:aspect-[3/4]" : "aspect-[4/5]"
         }`}
       >
@@ -126,7 +127,7 @@ export function ProductCard({
               ? t("Remover dos favoritos", "Remove from saved")
               : t("Guardar nos favoritos", "Save to wishlist")
           }
-          className={`absolute right-2 top-2 flex h-9 w-9 items-center justify-center border border-[var(--tkn-border)] transition-colors duration-300 ${
+          className={`absolute right-2 top-2 flex h-11 w-11 items-center justify-center border border-[var(--tkn-border)] transition-colors duration-300 ${
             saved
               ? "bg-[var(--tkn-fg)] text-[var(--tkn-bg)]"
               : "bg-[var(--tkn-bg)]/85 text-[var(--tkn-fg)] hover:bg-[var(--tkn-fg)] hover:text-[var(--tkn-bg)]"
@@ -140,7 +141,7 @@ export function ProductCard({
           <button
             type="button"
             onClick={() => setRestockModalProduct(product)}
-            className="absolute inset-x-0 bottom-0 hidden w-full bg-[var(--tkn-fg)]/92 py-3 text-[var(--tkn-bg)] label backdrop-blur-sm lg:block lg:translate-y-full lg:transition-transform lg:duration-500 lg:[transition-timing-function:var(--ease-editorial)] lg:group-hover:translate-y-0"
+            className="absolute inset-x-0 bottom-0 hidden min-h-[44px] w-full bg-[var(--tkn-fg)]/92 py-3 text-[var(--tkn-bg)] label backdrop-blur-sm lg:block lg:translate-y-full lg:transition-transform lg:duration-500 lg:[transition-timing-function:var(--ease-editorial)] lg:group-hover:translate-y-0"
           >
             {t("Avisa-me quando voltar", "Notify me when back")}
           </button>
@@ -150,7 +151,7 @@ export function ProductCard({
               <button
                 type="button"
                 onClick={() => add(product.sizes[0])}
-                className="w-full py-3 label hover:bg-[var(--tkn-fg)] hover:text-[var(--tkn-bg)] transition-colors"
+                className="min-h-[44px] w-full py-3 label hover:bg-[var(--tkn-fg)] hover:text-[var(--tkn-bg)] transition-colors"
               >
                 {justAdded
                   ? t("Adicionado ✓", "Added ✓")
@@ -163,7 +164,8 @@ export function ProductCard({
                   onClick={() => setQuickOpen((v) => !v)}
                   aria-expanded={quickOpen}
                   aria-controls={`quick-${product.slug}`}
-                  className="flex w-full items-center justify-between gap-3 px-3 py-3 label"
+                  className="flex min-h-[44px] w-full items-center justify-between gap-3 px-3 py-3 label"
+                  data-cine-pulse
                 >
                   <span>
                     {justAdded
@@ -184,7 +186,7 @@ export function ProductCard({
                       type="button"
                       onClick={() => add(size)}
                       aria-label={`${t("Adicionar", "Add")} ${product.name}, ${t("tamanho", "size")} ${size}`}
-                      className="bg-[var(--tkn-bg)] py-2.5 text-[11px] font-medium uppercase tracking-[0.06em] hover:bg-[var(--tkn-fg)] hover:text-[var(--tkn-bg)] transition-colors"
+                      className="min-h-[44px] bg-[var(--tkn-bg)] py-2.5 text-[11px] font-medium uppercase tracking-[0.06em] hover:bg-[var(--tkn-fg)] hover:text-[var(--tkn-bg)] transition-colors"
                     >
                       {size === "Único" ? t("Único", "One") : size}
                     </button>
