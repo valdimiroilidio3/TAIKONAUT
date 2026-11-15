@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
-import { LOOKBOOK_SHOTS, SITE_CONFIG } from "@/lib/catalog";
+import { LOOKBOOK_SHOTS, INSTAGRAM_FEED, SITE_CONFIG } from "@/lib/catalog";
 import { useStore } from "@/context/StoreContext";
 import { useDialogAccessibility } from "@/lib/use-dialog";
 import { PopupSection } from "./PopupSection";
@@ -16,7 +16,8 @@ export function LookbookAndSocialSection(){
   const [fullArchive,setFullArchive]=useState(false);
   const [email,setEmail]=useState("");const [whatsapp,setWhatsapp]=useState("");
   const [status,setStatus]=useState<"idle"|"loading"|"done"|"error">("idle");const [error,setError]=useState("");
-  const images=fullArchive?LOOKBOOK_SHOTS:[LOOKBOOK_SHOTS[2],LOOKBOOK_SHOTS[4],LOOKBOOK_SHOTS[1]];
+  const selectionIds=["lb-3","lb-17","lb-2"];
+  const images=fullArchive?LOOKBOOK_SHOTS:selectionIds.map(id=>LOOKBOOK_SHOTS.find(s=>s.id===id)).filter((s):s is (typeof LOOKBOOK_SHOTS)[number]=>Boolean(s));
   const shot=index!==null?LOOKBOOK_SHOTS[index]:null;
   useDialogAccessibility(index!==null,()=>setIndex(null));
   useEffect(()=>{
@@ -48,7 +49,24 @@ export function LookbookAndSocialSection(){
           <figcaption className="flex items-baseline justify-between gap-3 mt-3 product-meta"><span>{s.productName}</span><span className="mono !text-[9px]">{String(i+1).padStart(2,"0")}</span></figcaption>
         </figure>)}
       </div>
-      <div className="mt-10 flex justify-between items-center gap-4 text-[11px]"><span className="text-[var(--tkn-muted)]">{t("Fotografias do arquivo oficial Taikonaut.","Photography from the official Taikonaut archive.")}</span><button type="button" className="label link-u shrink-0" onClick={()=>setFullArchive(!fullArchive)} aria-expanded={fullArchive}>{fullArchive?t("Ver seleção","View selection"):t("O arquivo completo","The full archive")} {fullArchive?"−":"+"}</button></div>
+      <div className="mt-10 flex justify-between items-center gap-4 text-[11px]"><span className="text-[var(--tkn-muted)]">{t("Fotografias da loja oficial e do Instagram @taikonautmaputo.","Photography from the official shop and @taikonautmaputo on Instagram.")}</span><button type="button" className="label link-u shrink-0" onClick={()=>setFullArchive(!fullArchive)} aria-expanded={fullArchive}>{fullArchive?t("Ver seleção","View selection"):t("O arquivo completo","The full archive")} {fullArchive?"−":"+"}</button></div>
+
+      <div className="mt-20 border-t border-[var(--tkn-border-subtle)] pt-10" data-story-reveal>
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-8">
+          <div>
+            <p className="label text-[var(--tkn-muted)] mb-3">{t("Do Instagram","From Instagram")}</p>
+            <h3 className="display text-[clamp(2.2rem,5vw,4.5rem)] leading-[0.9]">{t("Fora do estúdio.","Outside the studio.")}</h3>
+          </div>
+          <a className="arrow-link label shrink-0" href={SITE_CONFIG.store.instagramUrl} target="_blank" rel="noopener noreferrer">@taikonautmaputo <ArrowUpRight size={16}/></a>
+        </div>
+        <div className="flex gap-3 sm:gap-5 overflow-x-auto pb-4 snap-x snap-mandatory" aria-label={t("Publicações de @taikonautmaputo no Instagram","Posts from @taikonautmaputo on Instagram")}>
+          {INSTAGRAM_FEED.map((post,i)=><a key={post.id} href={post.postUrl} target="_blank" rel="noopener noreferrer" className="relative shrink-0 w-[64vw] sm:w-[34vw] lg:w-[22vw] aspect-[4/5] overflow-hidden bg-[var(--tkn-surface-alt)] snap-start group" aria-label={`${t("Abrir publicação no Instagram","Open Instagram post")} ${String(i+1).padStart(2,"0")}: ${t(post.altPt,post.altEn)}`}>
+            <Image src={post.image} alt={t(post.altPt,post.altEn)} fill sizes="(min-width:1024px) 22vw, (min-width:640px) 34vw, 64vw" quality={75} loading="lazy" className="object-cover transition-transform duration-[1200ms] group-hover:scale-[1.03]"/>
+            <span aria-hidden="true" className="absolute bottom-3 left-3 mono !text-[9px] text-white mix-blend-difference">{String(i+1).padStart(2,"0")}</span>
+          </a>)}
+        </div>
+        <p className="mt-3 text-[11px] text-[var(--tkn-muted)]">{t("Publicações públicas da marca; direitos de publicação a confirmar antes do lançamento comercial.","Public brand posts; publication rights to be confirmed before commercial launch.")}</p>
+      </div>
     </div>
     <PopupSection/>
     <div id="sobre" className="page-shell py-12 sm:py-20">

@@ -182,3 +182,35 @@ Ambiente de validação local: Chromium headless fornecido por binário npm (o C
 2. `Coming back soon` continua sem fotografia oficial e apresenta estado textual explícito.
 3. Os 10 pontos de `src/data/commercial-audit.json` continuam por confirmar pela marca (grelha XS/2XL, stock por variante, fichas técnicas, portes, taxa, data do evento, direitos de imagem, consentimento).
 4. Pagamentos reais, Core Web Vitals de campo e conversão com tráfego real não foram validados; os números acima são de laboratório.
+
+---
+
+## STEP 05 — Implementação das imagens de produto (loja oficial + Instagram)
+
+Pedido: implementar as imagens dos produtos a partir de `https://www.taikonautmaputo.com/` e `https://www.instagram.com/taikonautmaputo/`.
+
+### Estado anterior
+
+As 38 imagens documentadas no inventário já estavam implementadas e a renderizar (validado com `audit-assets.mjs`, `check-visuals.mjs` e capturas desktop/mobile). Faltavam duas coisas reais:
+
+1. As páginas de produto esgotado da loja oficial (`Mozdrian Sweater`, `Maçanica Tee`, `Mafura Tee`) tinham fotografias que não constavam do projeto.
+2. `INSTAGRAM_FEED` em `src/lib/catalog.ts` era uma exportação não usada, com packshots da loja a fazer de substitutos — nenhuma fotografia do Instagram estava implementada.
+
+### O que foi feito
+
+- Recuperaram-se **8 fotografias oficiais** dessas três páginas de arquivo e **15 fotografias de publicações públicas** do perfil oficial da marca, através dos URLs públicos já publicados (job temporário de GitHub Actions; os ficheiros foram convertidos para WebP, sem geração de imagem). Um frame de vídeo escuro sem conteúdo foi descartado.
+- `src/data/asset-inventory.json` passou a **61 imagens / 9,88 MB em disco**, com URL de origem, dimensões, bytes, SHA-256 e proveniência de cada ficheiro novo; `rightsNote` regista que os direitos de publicação das fotografias do Instagram e os créditos dos autores devem ser confirmados pela marca.
+- `src/lib/catalog.ts`: `LOOKBOOK_SHOTS` passou de 7 para **24 fotografias reais** (arquivo oficial + Instagram), e `INSTAGRAM_FEED` passou a ter **15 publicações reais** com `postUrl` de origem, deixando de usar packshots como substitutos.
+- `src/components/LookbookAndSocialSection.tsx`: nova secção editorial "Fora do estúdio / Outside the studio" com a galeria horizontal real do Instagram (links para os posts, `alt` bilingue, `loading="lazy"`, `quality={75}`, snap horizontal), seleção inicial do arquivo atualizada e legenda de proveniência corrigida.
+- `src/data/products.json`: 7 produtos passaram a ter uma **4.ª vista real** (`model`) vinda das publicações da marca — Black/White Basic Tee, os três Signature Hoodies e os dois Map Jackets. `getGallery()` já suportava `model`; nomes, preços, stock, tamanhos, disponibilidade e descrições permanecem **idênticos** a `docs/catalog-baseline.json`. Nenhum produto, preço ou regra comercial foi criado.
+- `docs/ASSET_DIRECTION.md`: proveniência, estrutura de pastas, créditos e limitação de direitos atualizados.
+
+### Validação
+
+`npm run lint` · `npm run typecheck` · `npm run build` (20 páginas) · `audit-assets.mjs` (**61 imagens / 9,88 MB**, 0 caminhos partidos) · `audit-commercial.mjs` (**13 produtos idênticos ao baseline**) · `check-storefront.mjs` (23/23) · `check-commerce.mjs` (8/8) · `check-visuals.mjs` (0 imagens partidas, 0 erros JS) · `check-accessibility.mjs` (**0 violações em 6 cenários**; corrigido `label-content-name-mismatch` nos links do Instagram) · `check-performance.mjs` (LCP 260 ms, CLS 0, `good-in-lab`) · `check-video.mjs`. Capturas desktop/mobile confirmam: 15 tiles reais na galeria do Instagram, arquivo completo com 24 fotografias, **4 vistas reais** na PDP do Day Map Jacket, 0 overflow horizontal e 0 erros de página.
+
+### Limitações que permanecem
+
+- As fotografias do Instagram são públicas, mas os créditos/autorizações de publicação comercial não foram confirmados pela marca nem pelos fotógrafos; está assinalado na interface e na documentação.
+- As peças de arquivo esgotadas (Mozdrian, Maçanica, Mafura) **não** foram adicionadas ao catálogo: as imagens são editoriais. O produto `Coming back soon` continua sem fotografia oficial.
+- Continuam em falta os masters de vídeo autorizados, a validação de pagamentos reais e os Core Web Vitals de campo.

@@ -18,8 +18,10 @@ O GSAP ScrollTrigger atua apenas em deslocamentos curtos/revelações e parallax
 
 - 35 imagens reais previamente publicadas na loja oficial `https://www.taikonautmaputo.com/`, reorganizadas e convertidas para WebP (logo original em PNG transparente).
 - Três derivados fotográficos: posters desktop/mobile e imagem social, recortados da fotografia real da camisola Mozdrian. Não são frames de um vídeo nem fotografias novas.
-- Não foram importadas imagens do Instagram sem acesso/export autorizado. A ligação para o perfil permanece.
+- **8 fotografias adicionais** das páginas de produto esgotadas da loja oficial (Mozdrian Sweater frente/costas, Maçanica Tee e Mafura Tee frente/modelo/detalhe). São arquivo editorial: não foi criado nenhum produto, preço ou stock novo para as vender.
+- **15 fotografias de publicações públicas** do próprio perfil `https://www.instagram.com/taikonautmaputo/`, a pedido do dono do projeto. Foram obtidas dos URLs públicos das publicações, convertidas para WebP e ligadas ao post de origem na secção "From Instagram". Não são frames de vídeo privados nem imagens geradas.
 - O arquivo Mozdrian é identificado como arquivo; não foi criado um produto novo para o vender.
+- **Direitos:** as fotografias do Instagram têm créditos de fotógrafo/modelos nas legendas originais (ex. @quituxe, @outtlandishmind, @teosson, @denilsonforce, @thenametwaan, @ppurpleswag, @yungmypro, @yeahhuo). A publicação comercial deve ser confirmada pela marca e pelos autores antes do lançamento; esta é uma limitação registada, não uma autorização presumida.
 - **Nenhum vídeo foi fornecido no projeto.** O site da marca liga para “The Homecoming Pop-Up” no Vimeo; a página de revisão é pública, mas o endpoint do MP4 devolveu 403. Não se contornou a restrição nem se copiou um URL privado/expirável.
 - **Coming back soon não tem fotografia oficial.** O SVG genérico foi eliminado; é apresentado um estado textual “Fotografia por disponibilizar”. Preço, nome e stock do catálogo permanecem inalterados.
 
@@ -32,6 +34,8 @@ O inventário com URL de origem, dimensões, tamanho e classificação está em 
 - `public/images/products/<slug>/` — packshots reais, frente/costas/perfil.
 - `public/images/details/` — map-jackets, mozdrian, taikosunnies e fruit-series.
 - `public/images/community/fruit-series/` — Manga e Tintsiva vestidas.
+- `public/images/archive/<slug>/` — fotografias reais de peças esgotadas da loja oficial (editorial, sem produto novo).
+- `public/images/instagram/` — fotografias reais das publicações públicas da marca, com o URL do post no inventário.
 - `public/images/brand/` — logótipo original e guias oficiais de tamanhos.
 - `public/videos/campaigns/arrival/` — reservado para o filme do hero.
 - `public/videos/campaigns/homecoming/` — reservado para o export autorizado do evento.

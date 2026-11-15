@@ -1,7 +1,7 @@
 {
   "sourceStore": "https://www.taikonautmaputo.com/",
   "reviewLink": "https://vimeo.com/reviews/d89b7069-5905-42a7-947f-bfd9920a35ad/videos/1246028289",
-  "rightsNote": "Sourced from the brand’s own public shop for this requested redesign. No Instagram files or private Vimeo files have been downloaded. Confirm publication rights for any future supplied media.",
+  "rightsNote": "Sourced from the brand’s own public shop and public @taikonautmaputo Instagram posts, at the project owner’s request. No private Vimeo or private Instagram files were downloaded. Confirm publication/photographer rights before commercial launch; credits are in docs/ASSET_DIRECTION.md.",
   "images": [
     {
       "path": "/images/campaigns/arrival/mozdrian-editorial.webp",
@@ -417,6 +417,259 @@
       "bytes": 94138,
       "status": "available",
       "provenance": "Photographic crop of the official archive image. Not a video frame."
+    },
+    {
+      "path": "/images/archive/mozdrian-sweater/front.webp",
+      "category": "archive",
+      "source": "https://assets.bigcartel.com/product_images/405884736/W+MOZDRIAN+F.jpg?auto=format&fit=max&w=2000",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 287476,
+      "sha256": "372f2461326391a615b1143d8af5904af3123a19e8f218d05d4507ec3fb9ca4a",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store product page; sold-out archive piece. No generated imagery."
+    },
+    {
+      "path": "/images/archive/mozdrian-sweater/back.webp",
+      "category": "archive",
+      "source": "https://assets.bigcartel.com/product_images/405884733/W+MOZDRIAN+B.jpg?auto=format&fit=max&w=2000",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 241844,
+      "sha256": "bded47194e3b2cbfc2cec16a951986365bff9129f752d97a05a26b6c6c89a033",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store product page; sold-out archive piece. No generated imagery."
+    },
+    {
+      "path": "/images/archive/macanica-tee/front.webp",
+      "category": "archive",
+      "source": "https://assets.bigcartel.com/product_images/404367174/WEBSITE+MAC%CC%A7.jpg?auto=format&fit=max&w=2000",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 124230,
+      "sha256": "cfee2d3eae8cb97bff7ba388f711445a973bd8de1a3d446189a7d55cb8b5349b",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store product page; sold-out archive piece. No generated imagery."
+    },
+    {
+      "path": "/images/archive/macanica-tee/on-model.webp",
+      "category": "archive",
+      "source": "https://assets.bigcartel.com/product_images/405962835/CE88D04F-D4EC-42A8-B19E-3CC3C6DD2CC6.jpg?auto=format&fit=max&w=2000",
+      "width": 1400,
+      "height": 1747,
+      "bytes": 367232,
+      "sha256": "0bc999e3076fcfcd04aa4ec15bb81a838b009efcaea4f060ac08cdee7ae39993",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store product page; sold-out archive piece. No generated imagery."
+    },
+    {
+      "path": "/images/archive/macanica-tee/detail.webp",
+      "category": "archive",
+      "source": "https://assets.bigcartel.com/product_images/405962832/C9EF67C7-8492-49A7-ADC5-A19AECEC7262.JPG?auto=format&fit=max&w=2000",
+      "width": 1400,
+      "height": 1748,
+      "bytes": 302812,
+      "sha256": "4eca16402f25a8011454d9f75a61d440471d82a888b3da126cec19a0c03f5605",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store product page; sold-out archive piece. No generated imagery."
+    },
+    {
+      "path": "/images/archive/mafura-tee/front.webp",
+      "category": "archive",
+      "source": "https://assets.bigcartel.com/product_images/404953956/WEBSITE+MAFURA.jpg?auto=format&fit=max&w=2000",
+      "width": 1400,
+      "height": 1750,
+      "bytes": 140648,
+      "sha256": "d066004db4d6fab6078a8e58524ae8a7eda2370f01fd91f3a60d393aa79a6b55",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store product page; sold-out archive piece. No generated imagery."
+    },
+    {
+      "path": "/images/archive/mafura-tee/on-model.webp",
+      "category": "archive",
+      "source": "https://assets.bigcartel.com/product_images/405962814/E2131F89-C2CF-4AE1-BC84-732223D7B5F3.jpg?auto=format&fit=max&w=2000",
+      "width": 1400,
+      "height": 1747,
+      "bytes": 364966,
+      "sha256": "590483d7ba7b327bc479a9382f474b28fc303106636270fa0782dc078487341a",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store product page; sold-out archive piece. No generated imagery."
+    },
+    {
+      "path": "/images/archive/mafura-tee/detail.webp",
+      "category": "archive",
+      "source": "https://assets.bigcartel.com/product_images/405962742/8D4FBA5C-AA83-416C-9709-398E11D00C80.JPG?auto=format&fit=max&w=2000",
+      "width": 1400,
+      "height": 1747,
+      "bytes": 311510,
+      "sha256": "5088ab32d99185ff7e8e39803cb6822e5a241676e51494548845e0fd7196f2f9",
+      "status": "available",
+      "provenance": "Published on the official Taikonaut store product page; sold-out archive piece. No generated imagery."
+    },
+    {
+      "path": "/images/instagram/Dfj5rVXuQlx-1.webp",
+      "category": "instagram",
+      "source": "https://www.instagram.com/p/Dfj5rVXuQlx/",
+      "width": 1200,
+      "height": 900,
+      "bytes": 41574,
+      "sha256": "c6acd83e386044908ccfc1641f1237dd0040d5d1117a45f6c1e9479bc5d076da",
+      "status": "available",
+      "provenance": "Public post on the brand’s own @taikonautmaputo Instagram, supplied as a source by the project owner; publication rights to be confirmed."
+    },
+    {
+      "path": "/images/instagram/DfMsq45DpuN-1.webp",
+      "category": "instagram",
+      "source": "https://www.instagram.com/p/DfMsq45DpuN/",
+      "width": 1200,
+      "height": 1601,
+      "bytes": 62366,
+      "sha256": "a238b4332748cdb46c21bfdd19a0ab7cd44fa35fcae901df02bfc09af9a4e094",
+      "status": "available",
+      "provenance": "Public post on the brand’s own @taikonautmaputo Instagram, supplied as a source by the project owner; publication rights to be confirmed."
+    },
+    {
+      "path": "/images/instagram/DfMsq45DpuN-2.webp",
+      "category": "instagram",
+      "source": "https://www.instagram.com/p/DfMsq45DpuN/",
+      "width": 1200,
+      "height": 1601,
+      "bytes": 259100,
+      "sha256": "12fddf977c1b11e61994ce3ca62cde125e9de3bf0e05bb4962bd611ce3ea0804",
+      "status": "available",
+      "provenance": "Public post on the brand’s own @taikonautmaputo Instagram, supplied as a source by the project owner; publication rights to be confirmed."
+    },
+    {
+      "path": "/images/instagram/De6rs0JjqEN-1.webp",
+      "category": "instagram",
+      "source": "https://www.instagram.com/p/De6rs0JjqEN/",
+      "width": 1200,
+      "height": 1443,
+      "bytes": 117494,
+      "sha256": "317c669e1d99fe97f138ae4bcb294ae127b839b11220ee16237babc7ed0a6044",
+      "status": "available",
+      "provenance": "Public post on the brand’s own @taikonautmaputo Instagram, supplied as a source by the project owner; publication rights to be confirmed."
+    },
+    {
+      "path": "/images/instagram/De6rs0JjqEN-2.webp",
+      "category": "instagram",
+      "source": "https://www.instagram.com/p/De6rs0JjqEN/",
+      "width": 1200,
+      "height": 1443,
+      "bytes": 288924,
+      "sha256": "8958976235189a19bc1176693317e1bd8401ba99838b592e4b3b8d0b16d32a6c",
+      "status": "available",
+      "provenance": "Public post on the brand’s own @taikonautmaputo Instagram, supplied as a source by the project owner; publication rights to be confirmed."
+    },
+    {
+      "path": "/images/instagram/DezSkY7uHGP-1.webp",
+      "category": "instagram",
+      "source": "https://www.instagram.com/p/DezSkY7uHGP/",
+      "width": 1200,
+      "height": 1600,
+      "bytes": 255040,
+      "sha256": "8474854eac22befa241bcb19529233d2ebfbcdcba3dfa84a77b36179382de639",
+      "status": "available",
+      "provenance": "Public post on the brand’s own @taikonautmaputo Instagram, supplied as a source by the project owner; publication rights to be confirmed."
+    },
+    {
+      "path": "/images/instagram/DdLuHO1uNKj-1.webp",
+      "category": "instagram",
+      "source": "https://www.instagram.com/p/DdLuHO1uNKj/",
+      "width": 1200,
+      "height": 2130,
+      "bytes": 76196,
+      "sha256": "32cfd729326f85d9526ae45f74914140187b8483c56aa3eaa69657c2a3afb317",
+      "status": "available",
+      "provenance": "Public post on the brand’s own @taikonautmaputo Instagram, supplied as a source by the project owner; publication rights to be confirmed."
+    },
+    {
+      "path": "/images/instagram/Dc5mEMvDmy--1.webp",
+      "category": "instagram",
+      "source": "https://www.instagram.com/p/Dc5mEMvDmy-/",
+      "width": 1200,
+      "height": 1544,
+      "bytes": 254232,
+      "sha256": "6dcfee6b69132e222eebcf4244c86bea3e2a758740b6f9c4fbd196d084554a40",
+      "status": "available",
+      "provenance": "Public post on the brand’s own @taikonautmaputo Instagram, supplied as a source by the project owner; publication rights to be confirmed."
+    },
+    {
+      "path": "/images/instagram/Dc5mEMvDmy--2.webp",
+      "category": "instagram",
+      "source": "https://www.instagram.com/p/Dc5mEMvDmy-/",
+      "width": 1200,
+      "height": 1544,
+      "bytes": 333472,
+      "sha256": "adaf67e78ef1e273d2b47910ab37f5ec4d3c49a21c9fa99a7dd28fdc95b81bd7",
+      "status": "available",
+      "provenance": "Public post on the brand’s own @taikonautmaputo Instagram, supplied as a source by the project owner; publication rights to be confirmed."
+    },
+    {
+      "path": "/images/instagram/DctaaR2tpez-1.webp",
+      "category": "instagram",
+      "source": "https://www.instagram.com/p/DctaaR2tpez/",
+      "width": 1200,
+      "height": 2130,
+      "bytes": 52204,
+      "sha256": "0b857105aa0d2b7af3f2f4a3001c9be0c795109f4bf9de948a74f85207a74ecb",
+      "status": "available",
+      "provenance": "Public post on the brand’s own @taikonautmaputo Instagram, supplied as a source by the project owner; publication rights to be confirmed."
+    },
+    {
+      "path": "/images/instagram/DaqWuQfugPv-1.webp",
+      "category": "instagram",
+      "source": "https://www.instagram.com/p/DaqWuQfugPv/",
+      "width": 1200,
+      "height": 2130,
+      "bytes": 141002,
+      "sha256": "a72a9b6ba4b8d651e07bd623d0b5fd341309116a8855268235b751084157b198",
+      "status": "available",
+      "provenance": "Public post on the brand’s own @taikonautmaputo Instagram, supplied as a source by the project owner; publication rights to be confirmed."
+    },
+    {
+      "path": "/images/instagram/DaNgABejNlr-1.webp",
+      "category": "instagram",
+      "source": "https://www.instagram.com/p/DaNgABejNlr/",
+      "width": 1200,
+      "height": 1600,
+      "bytes": 100876,
+      "sha256": "44ec8315f2b850f4e71c3a3abe6adcb219c04fc3d8cc5e3a99a3e01f8d9a35e3",
+      "status": "available",
+      "provenance": "Public post on the brand’s own @taikonautmaputo Instagram, supplied as a source by the project owner; publication rights to be confirmed."
+    },
+    {
+      "path": "/images/instagram/DaNgABejNlr-2.webp",
+      "category": "instagram",
+      "source": "https://www.instagram.com/p/DaNgABejNlr/",
+      "width": 1200,
+      "height": 1600,
+      "bytes": 76688,
+      "sha256": "5c4a0b6925e3ec32d6867b919f48a77c3bf3ed6e2f3e40b8a0010e9e902d1246",
+      "status": "available",
+      "provenance": "Public post on the brand’s own @taikonautmaputo Instagram, supplied as a source by the project owner; publication rights to be confirmed."
+    },
+    {
+      "path": "/images/instagram/DZhudt8DJTp-1.webp",
+      "category": "instagram",
+      "source": "https://www.instagram.com/p/DZhudt8DJTp/",
+      "width": 1200,
+      "height": 1600,
+      "bytes": 150114,
+      "sha256": "87916ebcbb8956f6cdee3ab3455a7c8b5f0adf991a35b9f278b01661bb77ec72",
+      "status": "available",
+      "provenance": "Public post on the brand’s own @taikonautmaputo Instagram, supplied as a source by the project owner; publication rights to be confirmed."
+    },
+    {
+      "path": "/images/instagram/DYziel8DvjP-1.webp",
+      "category": "instagram",
+      "source": "https://www.instagram.com/p/DYziel8DvjP/",
+      "width": 1200,
+      "height": 1600,
+      "bytes": 140790,
+      "sha256": "1a2ce172d1a3f9ed4e033ea49b45e5684a546ca1c9f65bb6f7f8793254164711",
+      "status": "available",
+      "provenance": "Public post on the brand’s own @taikonautmaputo Instagram, supplied as a source by the project owner; publication rights to be confirmed."
     }
   ],
   "missing": [
