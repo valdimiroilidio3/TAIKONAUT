@@ -1,7 +1,11 @@
 name: Restore public Taikonaut media
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - arena/730758a2-taikonaut
+    paths:
+      - .github/workflows/restore-public-media.yml
 
 permissions:
   contents: write
