@@ -11,7 +11,7 @@ on:
     paths: [.github/workflows/restore-assets.yml]
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   restore:
@@ -86,3 +86,10 @@ jobs:
           path: public/images
           retention-days: 3
           if-no-files-found: error
+      - name: Commit restored assets to the working branch
+        run: |
+          git config user.name "Arena Agent"
+          git config user.email "arena-agent@users.noreply.github.com"
+          git add public/images
+          git diff --cached --quiet || git commit -m "Restore documented brand photography from official sources [skip ci]"
+          git push origin HEAD:arena/730758a2-taikonaut
